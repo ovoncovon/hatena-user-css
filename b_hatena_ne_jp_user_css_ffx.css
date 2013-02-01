@@ -1,3 +1,4 @@
+@-moz-document url-prefix("http://b.hatena.ne.jp/") {
 /*お好みで*/
 body{background-color:#F0F0F0 !important;}
 .box3_2,.box1_1,ul#navi-category{background-color: white !important;}
@@ -93,3 +94,4 @@ div.shim-elem-for-height{ height:30px !important;}
 /*もっと読む*/
 li.more-entry a {color: #383838 !important;}
 
+}

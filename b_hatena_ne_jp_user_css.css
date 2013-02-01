@@ -70,13 +70,6 @@ ul.entry-meta{position: absolute;top: 5px;right: 5px;padding:0 !important;border
 ul.entry-meta li.tag {display: none !important;}
 ul.entry-meta li.domain {margin: 0px 0px 3px 0;}
 
-
-/*サムネ*/
-/*a.thumbnail{display: inline !important;margin:0 !important;}
-a.thumbnail img,
-Ul.entry-vertical-4 li.entry-unit div.entry-contents a.video,
- ul.entry-vertical-4 li.entry-unit.video div.entry-contents a.thumbnail {width:50px !important;height: auto !important;}*/
-
 a.video span.play{display:none !important;}
 
 /*カテゴリー・日付*/

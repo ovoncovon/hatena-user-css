@@ -1,0 +1,102 @@
+/*お好みで*/
+body{background-color:#F0F0F0;}
+.box3_2,.box1_1,ul#navi-category{background-color: white;}
+
+/*リンクカラー*/
+div.entry-contents h3 a{color: #0056BD !important;}
+div.entry-contents h3 a:visited{color: #838 !important;}
+
+
+/*いらないブロック消す*/
+ul.entry-list-xl div.entry-contents blockquote,
+ul.entry-list-xl li.entry-unit ul.entry-comment,
+ul.entry-list-l div.entry-contents blockquote,
+ul.entry-list-l li.entry-unit ul.entry-comment,
+div.entry-contents blockquote,
+li.entry-unit .follow.hb-favorites-appended,
+a.thumbnail
+{display: none !important;}
+
+/*復活*/
+ul.entry-list-xl ul.entry-data{display:block;}
+
+/*ボックスボーダー*/
+
+.box1_2,
+.box3_2,
+.box1_1{width: 100% !important;border: 1px solid #CCC;border-radius:4px;}
+
+/*背景画像ボーダー消す*/
+div.box-wrap.box2.mix,ul.entry-vertical-4,ul.entry-vertical-3,div.box1_1 li.more-entry{background-image: none !important;}
+
+h2 {margin:0;padding: 5px 0 5px 5px;display:block;border-radius: 3px 3px 0 0;}
+.box1_1 h2,.box3_1 h2{background-color: #2C6EBD;}
+
+/*右サイドバー*/
+.box3_1{width: 100% !important;margin:0px !important;}
+.entry-vertical-3,
+.entry-list-m{border: 1px solid #CCC;border-radius:0 0 4px 4px; border-top:none;background-color: white;}
+div.box3_1 h2{margin:15px 0 0 0 !important;}
+div.box-wrap.box3.mix{margin-top:0;}
+div.box3_1 ul.entry-list-m li.entry-list{min-height:auto !important;position: relative;border-bottom:1px solid #ccc;}
+div.box3_1 ul.entry-list-m li.entry-list:last-child{border-bottom:none;}
+div.box3_1 li.entry-list div.entry-contents h3 {float: none !important;font-size: 16px;}
+div.box3_1 li.entry-list div.entry-contents {border-top:none;}
+div.box3_1 li.entry-list ul.users strong span, div.box3_1 li.entry-list ul.users span {display:inline;font-size:12px;font-weight:normal;}
+ul.entry-list-m li.category {display:block;}
+ul.entry-list-m li.entry-list ul.entry-data li.category a {color: #FFFFFF;font-size: 10px;line-height: 18px;padding: 0 7px;display: block;font-weight: normal;}
+
+/*エントリーリスト*/
+ul.entry-data,ul.entry-data li{margin:0 0 0 0 !important;}
+ul.entry-data li.date{line-height:1!important;}
+.entry-contents h3{margin:0 !important; clear:none !important;line-height:1 !important;}
+.hb-entry-link-container{ padding-right:170px !important;}
+.entry-vertical-3{border:none;background:none;}
+ /*特殊*/
+ ul[data-track-event-name^="toppage.section.osusume_entry.click_link"],
+ ul[data-track-event-name^="toppage.section.articles.click_link"]{border: 1px solid #CCC;background-color:white;}
+
+li.entry-unit{ width:100% !important; border-bottom:1px solid #ccc; overflow:hidden; position:relative;}
+li.entry-unit:last-child{border-bottom:none;}
+li.entry-unit ul.users {border-bottom:none;}
+ul.entry-list-xl,
+ul.entry-list-l,
+li.entry-unit{margin:0 !important;}
+li.entry-unit, li.entry-list {clear:both; padding:0;}
+ul.entry-list-xl{border-bottom:1px solid #ccc;}
+
+
+ul.entry-meta{position: absolute;top: 5px;right: 5px;padding:0 !important;border-bottom:none !important;}
+ul.entry-meta li.tag {display: none !important;}
+ul.entry-meta li.domain {margin: 0px 0px 3px 0;}
+
+
+/*サムネ*/
+/*a.thumbnail{display: inline !important;margin:0 !important;}
+a.thumbnail img,
+Ul.entry-vertical-4 li.entry-unit div.entry-contents a.video,
+ ul.entry-vertical-4 li.entry-unit.video div.entry-contents a.thumbnail {width:50px !important;height: auto !important;}*/
+
+a.video span.play{display:none !important;}
+
+/*カテゴリー・日付*/
+ul.entry-data{padding:4px 0 0 0 !important;}
+ul.entry-data li.category a,
+ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;}
+
+/*レイアウト*/
+div.entry-contents{float:left; width:89%;margin:0 !important;padding:5px 0 !important;border-bottom:none !important;}
+
+
+/*xxx user*/
+ul.users{border:none !important;height: auto !important;float: left;font-size:9px !important; margin: 5px;border-bottom: none;width: 80px !important;text-align: center;padding:0!important;}
+ul.users li{font-weight:bold !important;}
+ul.users li a {padding-left: 0 !important;color:#FF0707 !important;background-color: #FFCBCB;border-bottom: 1px solid #FF0707;}
+ul.users strong span,
+ul.users em span{font-size:12px !important;font-weight:bold !important;letter-spacing:0px !important;margin-right:0px !important;}
+
+div.shim-elem-for-height{ height:30px !important;}
+
+/*もっと読む*/
+li.more-entry a {color: #383838;}
+

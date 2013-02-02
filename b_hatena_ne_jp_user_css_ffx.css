@@ -7,7 +7,6 @@ body{background-color:#F0F0F0 !important;}
 div.entry-contents h3 a{color: #0056BD !important;}
 div.entry-contents h3 a:visited{color: #838 !important;}
 
-
 /*いらないブロック消す*/
 ul.entry-list-xl div.entry-contents blockquote,
 ul.entry-list-xl li.entry-unit ul.entry-comment,
@@ -21,7 +20,6 @@ a.thumbnail{display: none !important;}
 ul.entry-list-xl ul.entry-data{display:block !important;}
 
 /*ボックスボーダー*/
-
 .box1_2,
 .box3_2,
 .box1_1{width: 100% !important;border: 1px solid #CCC !important;border-radius:4px !important;}
@@ -29,8 +27,7 @@ ul.entry-list-xl ul.entry-data{display:block !important;}
 /*背景画像ボーダー消す*/
 div.box-wrap.box2.mix,ul.entry-vertical-4,ul.entry-vertical-3,div.box1_1 li.more-entry{background-image: none !important;}
 
-h2 {margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;}
-.box1_1 h2,.box3_1 h2{background-color: #2C6EBD !important;}
+.box1_1 h2,.box3_1 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important;}
 
 /*右サイドバー*/
 .box3_1{width: 100% !important;margin:0px !important;}
@@ -42,9 +39,9 @@ div.box3_1 ul.entry-list-m li.entry-list{min-height:auto !important;position: re
 div.box3_1 ul.entry-list-m li.entry-list:last-child{border-bottom:none !important;}
 div.box3_1 li.entry-list div.entry-contents h3 {float: none !important;font-size: 16px !important;}
 div.box3_1 li.entry-list div.entry-contents {border-top:none !important;}
-div.box3_1 li.entry-list ul.users strong span, div.box3_1 li.entry-list ul.users span {display:inline !important;font-size:12px !important;font-weight:normal !important;}
+div.box3_1 li.entry-list ul.users strong span, div.box3_1 li.entry-list ul.users span {display:inline !important;font-size:12px !important;}
 ul.entry-list-m li.category {display:block !important;}
-ul.entry-list-m li.entry-list ul.entry-data li.category a {color: #FFFFFF !important;font-size: 10p !importantx;line-height: 18px !important;padding: 0 7px !important;display: block !important;font-weight: normal !important;}
+ul.entry-list-m li.entry-list ul.entry-data li.category a {color: #FFFFFF !important;font-size: 9px !important;line-height: 12px !important;padding: 0 7px !important;display: block !important;font-weight: normal !important;}
 
 /*エントリーリスト*/
 ul.entry-data,ul.entry-data li{margin:0 0 0 0 !important;}
@@ -66,21 +63,22 @@ li.entry-unit{margin:0 !important;}
 li.entry-unit, li.entry-list {clear:both; padding:0 !important;}
 ul.entry-list-xl{border-bottom:1px solid #ccc !important;}
 
-
 ul.entry-meta{position: absolute;top: 5px !important;right: 5px !important;padding:0 !important;border-bottom:none !important;}
 ul.entry-meta li.tag {display: none !important;}
 ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;}
 
 a.video span.play{display:none !important;}
 
+/*pr*/
+ul.entry-data li.pr {font-size:9px !important;line-height: 10px !important;}
+
 /*カテゴリー・日付*/
 ul.entry-data{padding:4px 0 0 0 !important;}
 ul.entry-data li.category a,
-ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;}
+ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;font-size: 9px !important;line-height: 12px !important;}
 
 /*レイアウト*/
 div.entry-contents{float:left !important; width:89% !important;margin:0 !important;padding:5px 0 !important;border-bottom:none !important;}
-
 
 /*xxx user*/
 ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px !important;border-bottom: none !important;width: 80px !important;text-align: center !important;padding:0!important;}
@@ -93,5 +91,4 @@ div.shim-elem-for-height{ height:30px !important;}
 
 /*もっと読む*/
 li.more-entry a {color: #383838 !important;}
-
 }

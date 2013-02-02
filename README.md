@@ -5,12 +5,17 @@ hatena-user-css
   
 * Source:https://github.com/ovoncovon/hatena-user-css/
 * Homepage:http://tpex.hateblo.jp/
-* Twitter:https://twitter.com/tpex_ovon
+* Twitter:https://twitter.com/tpex_ovon  
 
-ユーザースタイルシートの使い方
+ファイル説明
 --------
-###Googl chrome
-####Stylish
+* Chrome用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css  
+* Firefox用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_ffx.css
+
+ブラウザ拡張
+--------
+### Googl Chrome Stylish
+
 https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe  
 * 設定→機能拡張→Stylishのオプションを開く  
 * 新しいスタイルの作成→コードをコピペ→適用先を「次で始まるURL」に変更→http://b.hatena.ne.jp/ を指定  

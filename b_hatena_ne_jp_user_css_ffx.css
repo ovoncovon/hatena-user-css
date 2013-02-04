@@ -85,7 +85,9 @@ ul.users{border:none !important;height: auto !important;float: left !important;f
 ul.users li{font-weight:bold !important;}
 ul.users li a {padding-left: 0 !important;color:#FF0707 !important;background-color: #FFCBCB;border-bottom: 1px solid #FF0707;}
 ul.users strong span,
-ul.users em span{font-size:12px !important;font-weight:bold !important;letter-spacing:0px !important;margin-right:0px !important;}
+ul.users em span,
+ul.users span{font-size:12px !important;font-weight:bold !important;letter-spacing:0px !important;margin-right:0px !important;}
+
 
 div.shim-elem-for-height{ height:30px !important;}
 

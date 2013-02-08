@@ -1,4 +1,4 @@
-/*お好みで*/
+/*背景カラー*/
 body{background-color:#F0F0F0 !important;}
 .box3_2,.box1_1,ul#navi-category{background-color: white !important;}
 
@@ -26,12 +26,16 @@ ul.entry-list-xl ul.entry-data{display:block !important;}
 /*背景画像ボーダー消す*/
 div.box-wrap.box2.mix,ul.entry-vertical-4,ul.entry-vertical-3,div.box1_1 li.more-entry{background-image: none !important;}
 
-.box1_1 h2,.box3_1 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important;}
+/*ヘッダentry,bookmark数*/
+div#branding div#total{width: 50% !important;text-align: right !important;}
 
-/*右サイドバー*/
+/*カテゴリータイトルを青に*/
+.box1_1 h2,.box3_1 h2,.box3_2 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important; line-height:1 !important;}
+
+/*カテゴリ別ホッテントリ*/
 .box3_1{width: 100% !important;margin:0px !important;}
 .entry-vertical-3,
-.entry-list-m{border: 1px solid #CCC !important;border-radius:0 0 4px 4px !important; border-top:none !important;background-color: white !important;}
+.entry-list-m{border: 1px solid #CCC !important;border-radius:0 0 4px 4px !important; border-top:none !important;background-color: white !important;padding: 0 0 !important;}
 div.box3_1 h2{margin:15px 0 0 0 !important;}
 div.box-wrap.box3.mix{margin-top:0 !important;}
 div.box3_1 ul.entry-list-m li.entry-list{min-height:auto !important;position: relative !important;border-bottom:1px solid #ccc !important;}
@@ -45,13 +49,8 @@ ul.entry-list-m li.entry-list ul.entry-data li.category a {color: #FFFFFF !impor
 /*エントリーリスト*/
 ul.entry-data,ul.entry-data li{margin:0 0 0 0 !important;}
 ul.entry-data li.date{line-height:1!important;}
-.entry-contents h3{margin:0 !important; clear:none !important;line-height:1 !important;}
-.hb-entry-link-container{ padding-right:170px !important;}
+.entry-contents h3{margin:0 !important; clear:none !important;line-height:1 !important; font-size:14px !important;}
 .entry-vertical-3{border:none !important;background:none !important;}
-
- /*特殊*/
- ul[data-track-event-name^="toppage.section.osusume_entry.click_link"],
- ul[data-track-event-name^="toppage.section.articles.click_link"]{border: 1px solid #CCC !important;background-color:white !important;}
 
 li.entry-unit{ width:100% !important; border-bottom:1px solid #ccc !important; overflow:hidden !important; position:relative !important;}
 li.entry-unit:last-child{border-bottom:none !important;}
@@ -69,26 +68,37 @@ ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;}
 a.video span.play{display:none !important;}
 
 /*pr*/
-ul.entry-data li.pr {font-size:9px !important;line-height: 10px !important;}
+ul.entry-data li.pr {font-size:12px !important;line-height: 1 !important;}
 
 /*カテゴリー・日付*/
 ul.entry-data{padding:4px 0 0 0 !important;}
 ul.entry-data li.category a,
-ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;font-size: 9px !important;line-height: 12px !important;}
+ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;font-size: 12px !important;line-height: 1 !important;padding:1px 7px !important;}
 
 /*レイアウト*/
 div.entry-contents{float:left !important; width:89% !important;margin:0 !important;padding:5px 0 !important;border-bottom:none !important;}
 
 /*xxx user*/
-ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px !important;border-bottom: none !important;width: 80px !important;text-align: center !important;padding:0!important;}
+ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px !important;border-bottom: none !important;width: 8em !important;text-align: center !important;padding:0!important;}
 ul.users li{font-weight:bold !important;}
 ul.users li a {padding-left: 0 !important;color:#FF0707 !important;background-color: #FFCBCB;border-bottom: 1px solid #FF0707;}
 ul.users strong span,
 ul.users em span,
 ul.users span{font-size:12px !important;font-weight:bold !important;letter-spacing:0px !important;margin-right:0px !important;}
 
-
-div.shim-elem-for-height{ height:30px !important;}
-
 /*もっと読む*/
-li.more-entry a {color: #383838 !important;}
+li.more-entry {margin: 0 5px 0 5px !important;}
+li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;line-height: 1 !important;margin: 5px 0 5px 0px !important;}
+
+/*ブックマーク個別ページ*/
+#hatena-bookmark-entry #container{max-width:960px !important; margin: 0 auto !important;}/*全体の幅*/
+#hatena-bookmark-entry #container .curvebox-body {padding: 10px 20px 0 20px !important;}
+#hatena-bookmark-entry #sidebar{display:none !important;}/*サイドバー削除*/
+
+#entry-info #ad{min-height:auto !important;}
+.bookmark-list li {padding:6px 0 6px 25px !important;overflow: hidden;line-height: 1!important;}
+.bookmark-list li:nth-child(odd){background-color:#ECECED !important;}
+.bookmark-list img.profile-image{float:none !important; margin:0 0 0 -20px !important;width:16px !important;height:16px !important}
+.bookmark-list li div.header,.comment-container{display: inline !important;}
+.bookmark-list span.comment {padding: 0 0 0 10px !important;color: #000 !important;}
+.bookmark-list span.tags,.plus_icon,div.tweets{display:none!important;}

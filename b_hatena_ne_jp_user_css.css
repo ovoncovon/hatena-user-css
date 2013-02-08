@@ -76,10 +76,10 @@ ul.entry-data li.category a,
 ul.entry-vertical-4 ul.entry-data li.category a{margin-right: 5px !important;font-size: 12px !important;line-height: 1 !important;padding:1px 7px !important;}
 
 /*レイアウト*/
-div.entry-contents{float:left !important; width:89% !important;margin:0 !important;padding:5px 0 !important;border-bottom:none !important;}
+div.entry-contents{float:left !important; width:80% !important;margin:0 !important;padding:5px 0 !important;border-bottom:none !important;}
 
 /*xxx user*/
-ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px !important;border-bottom: none !important;width: 8em !important;text-align: center !important;padding:0!important;}
+ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px 0.5% !important;border-bottom: none !important;width: 10% !important;text-align: center !important;padding:0!important;}
 ul.users li{font-weight:bold !important;}
 ul.users li a {padding-left: 0 !important;color:#FF0707 !important;background-color: #FFCBCB;border-bottom: 1px solid #FF0707;}
 ul.users strong span,
@@ -102,3 +102,4 @@ li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;lin
 .bookmark-list li div.header,.comment-container{display: inline !important;}
 .bookmark-list span.comment {padding: 0 0 0 10px !important;color: #000 !important;}
 .bookmark-list span.tags,.plus_icon,div.tweets{display:none!important;}
+

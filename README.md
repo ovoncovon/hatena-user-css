@@ -18,4 +18,8 @@ hatena-user-css
 
 https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe  
 * 設定→機能拡張→Stylishのオプションを開く  
-* 新しいスタイルの作成→コードをコピペ→適用先を「次で始まるURL」に変更→http://b.hatena.ne.jp/ を指定  
+* 新しいスタイルの作成→コードをコピペ→適用先を  
+「URL」→http://b.hatena.ne.jp/  
+「次で始まるURL」→http://b.hatena.ne.jp/hotentry  
+「次で始まるURL」→http://b.hatena.ne.jp/entrylist  
+とする

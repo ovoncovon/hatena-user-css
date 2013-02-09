@@ -90,7 +90,7 @@ ul.users span{font-size:12px !important;font-weight:bold !important;letter-spaci
 li.more-entry {margin: 0 5px 0 5px !important;}
 li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;line-height: 1 !important;margin: 5px 0 5px 0px !important;}
 
-/*ブックマーク個別ページ*/
+/*旧ブックマーク個別ページ*/
 #hatena-bookmark-entry #container{max-width:960px !important; margin: 0 auto !important;}/*全体の幅*/
 #hatena-bookmark-entry #container .curvebox-body {padding: 10px 20px 0 20px !important;}
 #hatena-bookmark-entry #sidebar{display:none !important;}/*サイドバー削除*/
@@ -103,3 +103,6 @@ li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;lin
 .bookmark-list span.comment {padding: 0 0 0 10px !important;color: #000 !important;}
 .bookmark-list span.tags,.plus_icon,div.tweets{display:none!important;}
 
+/*新*/
+div.box-wrap.box2.mix div.box3_1.notitle, div.box-wrap.box2.mix div.box3_2.notitle, div.box-wrap.box3.mix div.box3_1.notitle, div.box-wrap.box3.mix div.box3_2.notitle, div.box-wrap.box4.mix div.box4_1.notitle
+{display: block !important;}

@@ -31,7 +31,7 @@ Section 1はトップページやカテゴリページ用、Secion 2は個別エ
 「次で始まるURL」→http://b.hatena.ne.jp/entry/  
 とする  
 
-### Mozzila Firefox Stylish
+### Mozila Firefox Stylish
 
 https://addons.mozilla.org/ja/firefox/addon/stylish/  
 * 「ツール」→「アドオン」→「新しいスタイル」をクリック、適当な名前をつけてb_hatena_ne_jp_user_css_ffx.cssの内容をコピー＆ペーストして保存する

@@ -1,3 +1,9 @@
+/*-----------------------------------------
+Section 1
+url("http://b.hatena.ne.jp/"), 
+url-prefix("http://b.hatena.ne.jp/hotentry"),
+url-prefix("http://b.hatena.ne.jp/entrylist")
+-------------------------------------------*/
 /*背景カラー*/
 body{background-color:#F0F0F0 !important;}
 .box3_2,.box1_1,ul#navi-category{background-color: white !important;}
@@ -30,7 +36,7 @@ div.box-wrap.box2.mix,ul.entry-vertical-4,ul.entry-vertical-3,div.box1_1 li.more
 div#branding div#total{width: 50% !important;text-align: right !important;}
 
 /*カテゴリータイトルを青に*/
-.box1_1 h2,.box3_1 h2,.box3_2 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important; line-height:1 !important;}
+.box1_1 h2,.box3_1 h2,.box3_2 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;line-height:1 !important;background: url(/images/entry_title_bg.gif) top right #2C6EBD !important;}
 
 /*カテゴリ別ホッテントリ*/
 .box3_1{width: 100% !important;margin:0px !important;}
@@ -49,7 +55,7 @@ ul.entry-list-m li.entry-list ul.entry-data li.category a {color: #FFFFFF !impor
 /*エントリーリスト*/
 ul.entry-data,ul.entry-data li{margin:0 0 0 0 !important;}
 ul.entry-data li.date{line-height:1!important;}
-.entry-contents h3{margin:0 !important; clear:none !important;line-height:1 !important; font-size:14px !important;}
+.entry-contents h3{margin:0 !important;padding-right:110px !important;clear:none !important;line-height:1 !important; font-size:14px !important;}
 .entry-vertical-3{border:none !important;background:none !important;}
 
 li.entry-unit{ width:100% !important; border-bottom:1px solid #ccc !important; overflow:hidden !important; position:relative !important;}
@@ -61,9 +67,17 @@ li.entry-unit{margin:0 !important;}
 li.entry-unit, li.entry-list {clear:both; padding:0 !important;}
 ul.entry-list-xl{border-bottom:1px solid #ccc !important;}
 
-ul.entry-meta{position: absolute;top: 5px !important;right: 5px !important;padding:0 !important;border-bottom:none !important;}
-ul.entry-meta li.tag {display: none !important;}
-ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;}
+ul.entry-meta{padding:0 !important;;border:none !important;}
+ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;position: absolute !important;right: 5px !important;top: 3px !important;}
+
+ul.entry-meta li.tag {position: absolute !important;margin:0 !important;right: 5px !important;top: 1.5em !important;color:#666 !important;}
+ul.entry-meta li.tag::before{content:'タグ：'}
+
+ul.entry-meta li.tag a,
+ul.entry-meta li.tag a:hover{background:none !important;color: green !important;margin:0 0 0 5px !important;padding:0 !important;float:none !important;}
+ul.entry-meta li.tag a::before,
+ul.entry-meta li.tag a::after{border:none !important;content:'' !important;}
+
 
 a.video span.play{display:none !important;}
 
@@ -90,19 +104,118 @@ ul.users span{font-size:12px !important;font-weight:bold !important;letter-spaci
 li.more-entry {margin: 0 5px 0 5px !important;}
 li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;line-height: 1 !important;margin: 5px 0 5px 0px !important;}
 
+/*-----------------------------------------
+Section 2
+url-prefix("http://b.hatena.ne.jp/entry/")
+-------------------------------------------*/
 /*旧ブックマーク個別ページ*/
 #hatena-bookmark-entry #container{max-width:960px !important; margin: 0 auto !important;}/*全体の幅*/
 #hatena-bookmark-entry #container .curvebox-body {padding: 10px 20px 0 20px !important;}
 #hatena-bookmark-entry #sidebar{display:none !important;}/*サイドバー削除*/
 
 #entry-info #ad{min-height:auto !important;}
-.bookmark-list li {padding:6px 0 6px 25px !important;overflow: hidden;line-height: 1!important;}
-.bookmark-list li:nth-child(odd){background-color:#ECECED !important;}
+.bookmark-list li {padding:6px 10px 6px 25px !important;overflow: hidden;line-height: 1.3!important;}
+.bookmark-list li:nth-child(odd){background-color:#F1F1F1 !important;}
 .bookmark-list img.profile-image{float:none !important; margin:0 0 0 -20px !important;width:16px !important;height:16px !important}
 .bookmark-list li div.header,.comment-container{display: inline !important;}
 .bookmark-list span.comment {padding: 0 0 0 10px !important;color: #000 !important;}
 .bookmark-list span.tags,.plus_icon,div.tweets{display:none!important;}
 
 /*新*/
-div.box-wrap.box2.mix div.box3_1.notitle, div.box-wrap.box2.mix div.box3_2.notitle, div.box-wrap.box3.mix div.box3_1.notitle, div.box-wrap.box3.mix div.box3_2.notitle, div.box-wrap.box4.mix div.box4_1.notitle
-{display: block !important;}
+body{background-color:#F0F0F0 !important;}
+div.box-wrap.box2.mix div.box3_1.notitle, div.box-wrap.box2.mix div.box3_2.notitle, div.box-wrap.box3.mix div.box3_1.notitle, div.box-wrap.box3.mix div.box3_2.notitle, div.box-wrap.box4.mix div.box4_1.notitle{display: block !important;background-color: #fff !important;}
+
+/*パンくず*/
+.breadcrumbs,
+.breadcrumbs a{color: #5A5A5A !important;}
+
+/*ボックス*/
+.box1_2,
+.box3_1,
+.box3_2,
+.box1_1{width: 100% !important;border: 1px solid #CCC !important;border-radius:4px !important;background-color: #fff !important;}
+div.box-wrap{ width:100% !important;}
+div.box-wrap.box1.mix ul.entry-list-diary-l,
+ul.entry-vertical-4,
+div.box-wrap.box1.mix ul.entry-list-l{background-image:none !important;}
+
+
+/*ad*/
+body.entry ul.ad-head-text{background:none !important;}
+
+/*エントリーコンテンツ*/
+ul.entry-page-unit ul.entry-data li{height:auto !important;}
+body.entry ul.entry-page-unit ul.entry-data li.category a,
+ul.entry-page-unit ul.entry-data li.users a {line-height:1 !important;}
+body.entry .entry-page-unit .entry-contents{border-top:none !important;}
+blockquote,blockquote a{color:#303030 !important;line-height: 1.5 !important;}
+/*タグ*/
+.tags a.user-tag,
+ul.entry-data li.tag a,
+ul.entry-meta li.tag a{background:none !important;float: none !important;color: green !important;margin: 0!important;padding: 0 6px 0 0 !important;}
+.tags a.user-tag::before,
+ul.entry-data li.tag a::before,
+ul.entry-meta li.tag a::before,
+.tags a.user-tag::after,
+ul.entry-data li.tag a::after,
+ul.entry-meta li.tag a::after{display:none !important;}
+ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
+
+/*自分のコメント部分*/
+.add-bookmark-container{border:none !important;}
+.add-bookmark-container .comment-container{border:none !important;background:none !important; margin:0 !important;}
+.add-bookmark-container .comment-container::before,
+.add-bookmark-container .comment-container::after{display:none !important;}
+
+/*カテゴリータイトルを青に*/
+.box1_1 h2,.box3_1 h2,.box3_2 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important; line-height:1 !important;}
+
+/*ブコメ*/
+#bookmarks {background: none !important;margin: 0 !important;}
+#bookmarks h4 {background: none !important;}
+#bookmarks .bookmark-list {padding:0 !important;}
+#bookmarks .bookmark-list li{margin:0 !important;}
+#bookmarks .bookmark-list .header{width:auto !important;}
+#bookmarks .comment-container {border:none !important;background: none !important;line-height: 1 !important;padding:0 !important;margin:0 !important;display:inline !important;float: none !important;}
+#bookmarks .bookmark-list a.username,
+.add-bookmark-container a.username{color:#427DC4 !important;}
+#bookmarks .comment-container::before,
+#bookmarks .comment-container::after{display:none !important;}
+
+/*xxx user*/
+li.users{background-color: #FFCBCB !important;border-bottom: 1px solid #FF0707 !important;}
+li.users a{color:#FF0707 !important;}
+li.users a:hover{text-decoration:none !important;}
+li.users strong{font-weight:bold !important;}
+
+/*関連エントリー*/
+div.box3_1 ul.entry-list-m li.entry-list {min-height:auto !important;position: relative;}
+
+ul.entry-data,ul.entry-data li{margin:0 0 0 5px !important;}
+ul.entry-data li.date{line-height:1!important;}
+div.entry-contents{border:none !important;}
+.entry-contents h3{margin:0 !important; clear:none !important;line-height:1 !important;}
+/*リンクカラー*/
+div.entry-contents h3 a{color: #0056BD !important;}
+div.entry-contents h3 a:visited{color: #838 !important;}
+
+ul.entry-list-m{padding:0 !important;}
+
+ul.entry-meta{position: absolute;top: 5px !important;right: 5px !important;padding:0 !important;border-bottom:none !important;}
+ul.entry-meta li.tag {display: none !important;}
+ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;}
+
+ul.users{border:none !important;height: auto !important;float: left !important;font-size:9px !important; margin: 5px 0.5% !important;border-bottom: none !important;width: 10% !important;text-align: center !important;padding:0!important;}
+ul.users li{font-weight:bold !important;}
+ul.users li a {padding-left: 0 !important;color:#FF0707 !important;background-color: #FFCBCB;border-bottom: 1px solid #FF0707;}
+ul.users strong span,
+ul.users em span,
+ul.users span{font-size:12px !important;font-weight:bold !important;letter-spacing:0px !important;margin-right:0px !important;}
+li.entry-list ul.users span{display:inline !important;}
+
+/*こんなものいらない*/
+.box3_1,
+.box-wrap.box4,
+div.box-wrap.box2.mix div.box3_1.notitle,
+body.entry div.box-wrap.box1.mix
+{display:none!important;}

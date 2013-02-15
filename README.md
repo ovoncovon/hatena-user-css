@@ -4,7 +4,7 @@ hatena-user-css
 ユーザーCSSを作りました。  
   
 * Source:https://github.com/ovoncovon/hatena-user-css/
-* Homepage:http://tpex.hateblo.jp/
+* Homepage:http://tpex.hateblo.jp/entry/b-hatena-user-css
 * Twitter:https://twitter.com/tpex_ovon  
 
 ファイル説明

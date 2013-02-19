@@ -9,7 +9,9 @@ hatena-user-css
 
 ファイル説明
 --------
-* Chrome用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css  
+* Chrome用  
+https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css
+https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css2.css  
 * Firefox用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_ffx.css  
 
 両ブラウザともadblockを適用した状態でスタイルを調整しています。
@@ -19,15 +21,15 @@ hatena-user-css
 ### Google Chrome Stylish
 
 https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe  
-Section 1はトップページやカテゴリページ用、Secion 2は個別エントリー用  
+b_hatena_ne_jp_user_cssはトップページやカテゴリページ用、b_hatena_ne_jp_user_css2は個別エントリー用  
 
 * 設定→機能拡張→Stylishのオプションを開く  
-* 新しいスタイルの作成→b_hatena_ne_jp_user_css.cssのSection 1部分をコピー＆ペースト→適用先を  
+* 新しいスタイルの作成→b_hatena_ne_jp_user_css.cssをコピー＆ペースト→適用先を  
 「URL」→http://b.hatena.ne.jp/  
 「次で始まるURL」→http://b.hatena.ne.jp/hotentry  
 「次で始まるURL」→http://b.hatena.ne.jp/entrylist  
-とする  
-* 「他のセクションを追加」ボタンを押し、b_hatena_ne_jp_user_css.cssのSection 2部分をコピー＆ペースト→適用先を  
+とする ※最後に"/"はつけません
+* 「他のセクションを追加」ボタンを押し、b_hatena_ne_jp_user_css2.cssをコピー＆ペースト→適用先を  
 「次で始まるURL」→http://b.hatena.ne.jp/entry/  
 とする  
 

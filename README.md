@@ -10,7 +10,7 @@ hatena-user-css
 ファイル説明
 --------
 * Chrome用  
-https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css
+https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css  
 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css2.css  
 * Firefox用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_ffx.css  
 

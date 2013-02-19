@@ -8,8 +8,11 @@ div.entry-contents h3 a{color: #0056BD !important;}
 div.entry-contents h3 a:visited{color: #838 !important;}
 
 /*いらないブロック消す*/
+ul.entry-list-xl div.entry-contents blockquote,
+ul.entry-list-xl li.entry-unit ul.entry-comment,
+ul.entry-list-l div.entry-contents blockquote,
+ul.entry-list-l li.entry-unit ul.entry-comment,
 div.entry-contents blockquote,
-li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
 a.thumbnail{display: none !important;}
 
@@ -62,11 +65,11 @@ ul.entry-list-xl{border-bottom:1px solid #ccc !important;}
 ul.entry-meta{padding:0 !important;;border:none !important;}
 ul.entry-meta li.domain {margin: 0px 0px 3px 0 !important;position: absolute !important;right: 5px !important;top: 3px !important;}
 
-ul.entry-meta li.tag {position: absolute !important;margin:0 !important;right: 5px !important;top: 1.5em !important;color:#666 !important; font-size:77% !important;}
+ul.entry-meta li.tag {position: absolute !important;margin:0 !important;right: 5px !important;top: 1.5em !important;color:#666 !important;}
 ul.entry-meta li.tag::before{content:'タグ：'}
 
 ul.entry-meta li.tag a,
-ul.entry-meta li.tag a:hover{background:none !important;color: green !important;margin:0 0 0 5px !important;padding:0 !important;float:none !important; font-size:100% !important;}
+ul.entry-meta li.tag a:hover{background:none !important;color: green !important;margin:0 0 0 5px !important;padding:0 !important;float:none !important;}
 ul.entry-meta li.tag a::before,
 ul.entry-meta li.tag a::after{border:none !important;content:'' !important;}
 
@@ -106,9 +109,10 @@ li.more-entry a {color: #383838 !important;padding: 10px 0 10px 0 !important;lin
 #entry-info #ad{min-height:auto !important;}
 .bookmark-list li {padding:6px 10px 6px 25px !important;overflow: hidden;line-height: 1.3!important;}
 .bookmark-list li:nth-child(odd){background-color:#F1F1F1 !important;}
-.bookmark-list img.profile-image{float:none !important; margin:0 0 0 -20px !important;width:16px !important;height:16px !important;vertical-align: middle;}
+.bookmark-list img.profile-image{float:none !important; margin:0 0 0 -20px !important;width:16px !important;height:16px !important}
 .bookmark-list li div.header,.comment-container{display: inline !important;}
-.bookmark-list span.comment {padding:0 !important;color: #000 !important;font-size: 100% !important;}
+.bookmark-list span.comment {padding: 0 0 0 10px !important;color: #000 !important;}
+.bookmark-list span.tags,.plus_icon,div.tweets{display:none!important;}
 
 /*新*/
 body{background-color:#F0F0F0 !important;}
@@ -141,7 +145,7 @@ blockquote,blockquote a{color:#303030 !important;line-height: 1.5 !important;}
 /*タグ*/
 .tags a.user-tag,
 ul.entry-data li.tag a,
-ul.entry-meta li.tag a{background:none !important;float: none !important;color: green !important;margin: 0!important;padding: 0 6px 0 0 !important;font-size: 100% !important;}
+ul.entry-meta li.tag a{background:none !important;float: none !important;color: green !important;margin: 0!important;padding: 0 6px 0 0 !important;}
 .tags a.user-tag::before,
 ul.entry-data li.tag a::before,
 ul.entry-meta li.tag a::before,
@@ -164,10 +168,10 @@ ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
 #bookmarks h4 {background: none !important;}
 #bookmarks .bookmark-list {padding:0 !important;}
 #bookmarks .bookmark-list li{margin:0 !important;}
-#bookmarks .bookmark-list .header{width:auto !important; margin:0 !important; float:none !important;}
+#bookmarks .bookmark-list .header{width:auto !important;}
 #bookmarks .comment-container {border:none !important;background: none !important;line-height: 1 !important;padding:0 !important;margin:0 !important;display:inline !important;float: none !important;}
 #bookmarks .bookmark-list a.username,
-.add-bookmark-container a.username{color:#427DC4 !important; font-size:100% !important;}
+.add-bookmark-container a.username{color:#427DC4 !important;}
 #bookmarks .comment-container::before,
 #bookmarks .comment-container::after{display:none !important;}
 

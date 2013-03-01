@@ -28,6 +28,7 @@ b_hatena_ne_jp_user_cssはトップページやカテゴリページ用、b_hate
 「URL」→http://b.hatena.ne.jp/  
 「次で始まるURL」→http://b.hatena.ne.jp/hotentry  
 「次で始まるURL」→http://b.hatena.ne.jp/entrylist  
+「次で始まるURL」→http://b.hatena.ne.jp/news  
 とする ※最後に"/"はつけません
 * 「他のセクションを追加」ボタンを押し、b_hatena_ne_jp_user_css2.cssをコピー＆ペースト→適用先を  
 「次で始まるURL」→http://b.hatena.ne.jp/entry/  

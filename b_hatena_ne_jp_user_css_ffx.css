@@ -156,8 +156,8 @@ ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
 
 /*自分のコメント部分*/
 .add-bookmark-container{border:none !important;}
-.add-bookmark-container .comment-container{border:none !important;background:none !important; margin:0 !important;}
-.add-bookmark-container .comment-container::before,
+.add-bookmark-container .comment-container{border:none !important;background:none !important; margin:0 !important; width:auto !important;}
+.add-bookmark-container .comment-container::before ,
 .add-bookmark-container .comment-container::after{display:none !important;}
 
 /*カテゴリータイトルを青に*/
@@ -168,7 +168,7 @@ ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
 #bookmarks h4 {background: none !important;}
 #bookmarks .bookmark-list {padding:0 !important;}
 #bookmarks .bookmark-list li{margin:0 !important;}
-#bookmarks .bookmark-list .header{width:auto !important; margin:0 !important;}
+#bookmarks .bookmark-list .header{width:auto !important;margin: 0 5px 0 0 !important;}
 #bookmarks .comment-container {border:none !important;background: none !important;line-height: 1 !important;padding:0 !important;margin:0 !important;display:inline !important;float: none !important;}
 #bookmarks .bookmark-list a.username,
 .add-bookmark-container a.username{color:#427DC4 !important; font-size:100% !important;}

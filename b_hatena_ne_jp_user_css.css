@@ -2,7 +2,8 @@
 Section 1
 url("http://b.hatena.ne.jp/"), 
 url-prefix("http://b.hatena.ne.jp/hotentry"),
-url-prefix("http://b.hatena.ne.jp/entrylist")
+url-prefix("http://b.hatena.ne.jp/entrylist"),
+url-prefix("http://b.hatena.ne.jp/news")
 -------------------------------------------*/
 /*背景カラー*/
 body{background-color:#F0F0F0 !important;}

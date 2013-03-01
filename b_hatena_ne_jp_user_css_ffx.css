@@ -1,4 +1,4 @@
-@-moz-document url("http://b.hatena.ne.jp/"), url-prefix("http://b.hatena.ne.jp/hotentry"), url-prefix("http://b.hatena.ne.jp/entrylist") {
+@-moz-document url("http://b.hatena.ne.jp/"), url-prefix("http://b.hatena.ne.jp/hotentry"), url-prefix("http://b.hatena.ne.jp/entrylist"), url-prefix("http://b.hatena.ne.jp/news") {
 /*背景カラー*/
 body{background-color:#F0F0F0 !important;}
 .box3_2,.box1_1,ul#navi-category{background-color: white !important;}
@@ -156,9 +156,12 @@ ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
 
 /*自分のコメント部分*/
 .add-bookmark-container{border:none !important;}
-.add-bookmark-container .comment-container{border:none !important;background:none !important; margin:0 !important; width:auto !important;}
+
+.add-bookmark-container .comment-container{border:none !important;background:none !important; margin:0 !important; width:auto !important;float:none !important; }
 .add-bookmark-container .comment-container::before ,
 .add-bookmark-container .comment-container::after{display:none !important;}
+.add-bookmark-container .bookmark-list li{ overflow:visible !important;}
+.add-bookmark-container .header{float:none !important;}
 
 /*カテゴリータイトルを青に*/
 .box1_1 h2,.box3_1 h2,.box3_2 h2{margin:0!important;padding: 5px 0 5px 5px!important;display:block!important;border-radius: 3px 3px 0 0 !important;background-color: #2C6EBD !important; line-height:1 !important;}

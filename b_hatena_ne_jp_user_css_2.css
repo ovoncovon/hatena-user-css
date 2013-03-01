@@ -3,6 +3,8 @@ Section 2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
 /*旧ブックマーク個別ページ*/
+#header li{font-size:100% !important;}
+
 #hatena-bookmark-entry #container{max-width:960px !important; margin: 0 auto !important;}/*全体の幅*/
 #hatena-bookmark-entry #container .curvebox-body {padding: 10px 20px 0 20px !important;}
 #hatena-bookmark-entry #sidebar{display:none !important;}/*サイドバー削除*/
@@ -13,6 +15,8 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .bookmark-list img.profile-image{float:none !important; margin:0 0 0 -20px !important;width:16px !important;height:16px !important;vertical-align: middle;}
 .bookmark-list li div.header,.comment-container{display: inline !important;}
 .bookmark-list span.comment {padding:0 !important;color: #000 !important;font-size: 100% !important;}
+#entry-content,#hatena-bookmark-entry blockquote{font-size:100% !important;}
+.tweets{ display:none !important;}
 
 /*新*/
 body{background-color:#F0F0F0 !important;}
@@ -68,12 +72,13 @@ ul.entry-page-unit ul.entry-data li.tag::before{content:"タグ："}
 #bookmarks h4 {background: none !important;}
 #bookmarks .bookmark-list {padding:0 !important;}
 #bookmarks .bookmark-list li{margin:0 !important;}
-#bookmarks .bookmark-list .header{width:auto !important; margin:0 !important; float:none !important;}
+#bookmarks .bookmark-list .header{width:auto !important; margin:0 !important;}
 #bookmarks .comment-container {border:none !important;background: none !important;line-height: 1 !important;padding:0 !important;margin:0 !important;display:inline !important;float: none !important;}
 #bookmarks .bookmark-list a.username,
 .add-bookmark-container a.username{color:#427DC4 !important; font-size:100% !important;}
 #bookmarks .comment-container::before,
 #bookmarks .comment-container::after{display:none !important;}
+#bookmarks .tags{padding-left:0 !important;}
 
 /*xxx user*/
 li.users{background-color: #FFCBCB !important;border-bottom: 1px solid #FF0707 !important;}

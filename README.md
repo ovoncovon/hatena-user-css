@@ -38,7 +38,3 @@ b_hatena_ne_jp_user_cssはトップページやカテゴリページ用、b_hate
 
 https://addons.mozilla.org/ja/firefox/addon/stylish/  
 * 「ツール」→「アドオン」→「新しいスタイル」をクリック、適当な名前をつけてb_hatena_ne_jp_user_css_ffx.cssの内容をコピー＆ペーストして保存する
-
-### 不具合  
-
-新エントリーページで自分のコメントを修正するとき、表示が崩れる

@@ -11,7 +11,7 @@ hatena-user-css
 --------
 * Chrome用  
 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css.css  
-https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css2.css  
+https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_2.css
 * Firefox用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_ffx.css  
 
 両ブラウザともadblockを適用した状態でスタイルを調整しています。

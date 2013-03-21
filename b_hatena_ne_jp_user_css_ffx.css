@@ -184,13 +184,15 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 .inplace-comment-controller .inplace-form .comment { border: 1px solid #dbdbdb !important; width: 680px !important; top: 0px !important; }
 .add-bookmark-container .comment-container:before,
 .add-bookmark-container .comment-container:after { display: none !important; }
-.add-bookmark-container li.self .inplace-comment-controller { top: 0 !important; right: 0 !important; }
+.add-bookmark-container li.self .inplace-comment-controller { top: 0 !important; left: 600px !important; }
 .add-bookmark-container li.self .comment-container .bookmark-appender-cancel { top: 0 !important; right: 52px !important; }
 .add-bookmark-container li.self .comment-container input.bookmark-appender-submit { top: 0 !important; right: 0px !important; }
 .add-bookmark-container li.self .comment-container.edit input.private,
 .add-bookmark-container li.self .comment-container.edit .bookmark-appender-private,
 .add-bookmark-container li.self .comment-container .char-count { top: 30px !important; }
 .add-bookmark-container li.self .comment-container .char-count { left: 633px !important; }
+#add-bookmark-container h4.entry-page-main-subtitle a.inner { color: #333 !important;}
+.add-bookmark-container .header{ margin: 0 !important;}
 
 /*カテゴリータイトルを青に*/
 .box1_1 h2,

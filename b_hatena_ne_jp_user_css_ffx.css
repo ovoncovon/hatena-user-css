@@ -112,7 +112,7 @@ li.more-entry a { color: #383838 !important; padding: 10px 0 10px 0 !important; 
 
 #entry-info #ad { min-height: auto !important; }
 .bookmark-list li { padding: 6px 10px 6px 25px !important; overflow: hidden; line-height: 1.3!important; }
-.bookmark-list li:nth-child(odd) { background-color: #F1F1F1 !important; border-bottom: 1px solid #DBDBDB !important; border-top: 1px solid #DBDBDB !important; }
+.bookmark-list li:nth-child(odd) { background-color: #F1F1F1 !important; }
 .bookmark-list img.profile-image { float: none !important; margin: 0 0 0 -20px !important; width: 16px !important; height: 16px !important; vertical-align: middle; }
 .bookmark-list li div.header, .comment-container { display: inline !important; }
 .bookmark-list span.comment { padding: 0 !important; color: #000 !important; font-size: 100% !important; }
@@ -144,11 +144,15 @@ div.box-wrap.box1.mix ul.entry-list-l { background-image: none !important; }
 body.entry ul.ad-head-text { background: none !important; }
 
 /*エントリーコンテンツ*/
+.entry-page-unit .entry-contents{width : auto !important;;}
 ul.entry-page-unit ul.entry-data li { height: auto !important; }
+ul.entry-page-unit ul.users span{ display:inline !important;}
+ul.entry-page-unit ul.users { margin-top:18px !important; }
 ul.entry-page-unit ul.entry-data li.category a,
 ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 body.entry .entry-page-unit .entry-contents { border-top: none !important; }
 blockquote, blockquote a { color: #303030 !important; line-height: 1.5 !important; }
+#entry-content a.pagelink{ display : block !important ;color : #0086DE !important; margin-left:0 !important;}
 
 /*お気に入りのブックマーク*/
 #favorite-bookmarks { padding-bottom: 0px !important; border-bottom: none !important; }
@@ -197,14 +201,14 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 #bookmarks { background: none !important; margin: 0 !important; }
 #bookmarks h4 { background: none !important; }
 #bookmarks .bookmark-list { padding: 0 !important; }
-#bookmarks .bookmark-list li { margin: 0 !important; }
+#bookmarks .bookmark-list li { margin: 0 !important; width : auto !important; }
 #bookmarks .bookmark-list .header { width: auto !important; margin: 0 5px 0 0 !important; }
 #bookmarks .comment-container { border: none !important; background: none !important; line-height: 1 !important; padding: 0 !important; margin: 0 !important; display: inline !important; float: none !important; }
 #bookmarks .bookmark-list a.username,
 .add-bookmark-container a.username { color: #427DC4 !important; font-size: 100% !important; }
 #bookmarks .comment-container:before,
 #bookmarks .comment-container:after { display: none !important; }
-#bookmarks .tags { padding-left: 0 !important; }
+#bookmarks .tags { padding-left: 0 !important; background-image:none !important;}
 
 /*xxx user*/
 li.users { background-color: #FFCBCB !important; border-bottom: 1px solid #FF0707 !important; }
@@ -214,7 +218,6 @@ li.users strong { font-weight: bold !important; }
 
 /*関連エントリー*/
 div.box3_1 ul.entry-list-m li.entry-list { min-height: auto !important; position: relative; }
-ul.entry-data, ul.entry-data li { margin: 0 0 0 5px !important; }
 ul.entry-data li.date { line-height: 1!important; }
 div.entry-contents { border: none !important; }
 .entry-contents h3 { margin: 0 !important; clear: none !important; line-height: 1 !important; }

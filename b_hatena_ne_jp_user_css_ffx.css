@@ -139,14 +139,15 @@ div.box-wrap { width: 100% !important; }
 div.box-wrap.box1.mix ul.entry-list-diary-l,
 ul.entry-vertical-4,
 div.box-wrap.box1.mix ul.entry-list-l { background-image: none !important; }
+.box3_2 .box3_2{ border: none !important; margin-bottom:10px !important;}
 
 /*ad*/
 body.entry ul.ad-head-text { background: none !important; }
 
 /*エントリーコンテンツ*/
-.entry-page-unit .entry-contents{width : auto !important;;}
+.entry-page-unit .entry-contents{width : auto !important;}
 ul.entry-page-unit ul.entry-data li { height: auto !important; }
-ul.entry-page-unit ul.users span{ display:inline !important;}
+ul.entry-page-unit ul.users span{ display:inline !important; font-size : 16px !important;}
 ul.entry-page-unit ul.users { margin-top:18px !important; }
 ul.entry-page-unit ul.entry-data li.category a,
 ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
@@ -197,7 +198,7 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 /*カテゴリータイトルを青に*/
 .box1_1 h2,
 .box3_1 h2,
-.box3_2 h2 { margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; background-color: #2C6EBD !important; line-height: 1 !important; }
+.box3_2 h2 { margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; background-color: #2C6EBD !important; line-height: 1 !important; }
 
 /*ブコメ*/
 #bookmarks { background: none !important; margin: 0 !important; }
@@ -231,10 +232,10 @@ ul.entry-list-m { padding: 0 !important; }
 ul.entry-meta { position: absolute; top: 5px !important; right: 5px !important; padding: 0 !important; border-bottom: none !important; }
 ul.entry-meta li.tag { display: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; }
-ul.users { border: none !important; height: auto !important; float: left !important; font-size: 9px !important; margin: 5px 0.5% !important; border-bottom: none !important; width: 10% !important; text-align: center !important; padding: 0!important; }
+ul.users{ border: none !important; height: auto !important; float: left !important; font-size: 9px !important; margin: 5px 0.5% !important; border-bottom: none !important; width: 10% !important; text-align: center !important; padding: 0!important; }
 ul.users li { font-weight: bold !important; }
-ul.users li a { padding-left: 0 !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; }
-ul.users strong span, ul.users em span, ul.users span { font-size: 12px !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; }
+ul.users li a{ padding-left: 0 !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; },
+ul.users strong span, ul.users em span, ul.users span { font-size: 9px !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; }
 li.entry-list ul.users span { display: inline !important; }
 
 /*こんなものいらない*/
@@ -243,4 +244,16 @@ li.entry-list ul.users span { display: inline !important; }
 div.box-wrap.box2.mix div.box3_1.notitle,
 body.entry div.box-wrap.box1.mix { display: none!important; }
 
+/*サイドバーを下に*/
+#sidebar{display:block !important;}
+#sidebar-inner{position: relative !important; width:auto !important; top:0 !important;}
+
+/*関連エントリー関連*/
+ul.entrylist-l li.entrylist-unit {padding: 5px 0px 5px 25px !important;}
+ul.entrylist-l li.entrylist-unit ul.entry-data li.domain img.favicon {left:0 !important;}
+ul.entrylist-l li.entrylist-unit h3,
+ul.entrylist-l li.entrylist-unit ul.entry-data {display:inline !important;}
+ul.entrylist-l li.entrylist-unit ul.entry-data li.category{display:none !important;}
+ul.entrylist-l li.entrylist-unit ul.entry-data li.domain{line-height:1 !important;}
+ul.users span{font-weight:bold !important; font-size:13px !important;}
 }

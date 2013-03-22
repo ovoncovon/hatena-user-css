@@ -128,7 +128,7 @@ div.box-wrap.box3.mix div.box3_2.notitle,
 div.box-wrap.box4.mix div.box4_1.notitle { display: block !important; background-color: #fff !important; }
 
 /*パンくず*/
-.breadcrumbs, .breadcrumbs a { color: #5A5A5A !important; }
+.breadcrumbs, .breadcrumbs a { color: #000 !important; }
 
 /*ボックス*/
 .box1_2,
@@ -152,7 +152,7 @@ ul.entry-page-unit ul.users { margin-top:18px !important; }
 ul.entry-page-unit ul.entry-data li.category a,
 ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 body.entry .entry-page-unit .entry-contents { border-top: none !important; }
-blockquote, blockquote a { color: #303030 !important; line-height: 1.5 !important; }
+blockquote, blockquote a { color: #000 !important; line-height: 1.5 !important; }
 #entry-content a.pagelink{ display : block !important ;color : #0086DE !important; margin-left:0 !important;}
 
 /*お気に入りのブックマーク*/
@@ -194,6 +194,7 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 .add-bookmark-container li.self .comment-container .char-count { left: 633px !important; }
 #add-bookmark-container h4.entry-page-main-subtitle a.inner { color: #333 !important;}
 .add-bookmark-container .header{ margin: 0 !important;}
+.add-bookmark-form textarea#comment{color: #000 !important;}
 
 /*カテゴリータイトルを青に*/
 .box1_1 h2,

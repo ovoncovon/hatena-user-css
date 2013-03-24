@@ -2,6 +2,11 @@
 Section 2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
+@media screen and (min-width:480px) and (max-width:960px) { 
+  div#container{width:90% !important;}  
+}
+
+
 /*旧ブックマーク個別ページ*/
 #header li { font-size: 100% !important; }
 #hatena-bookmark-entry #container { max-width: 960px !important; margin: 0 auto !important; }
@@ -76,14 +81,14 @@ ul.entry-data li.tag a:before,
 ul.entry-meta li.tag a:before,
 .tags a.user-tag:after,
 ul.entry-data li.tag a:after,
- ul.entry-meta li.tag a:after { display: none !important; }
+ul.entry-meta li.tag a:after { display: none !important; }
 ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 
 /*自分のコメント部分*/
 .add-bookmark-container { border: none !important; }
 .add-bookmark-container h4 { background: none !important; margin-bottom: 0 !important; }
-.add-bookmark-container .comment-container { border: none !important; background: none !important; width: 860px !important; color: #333 !important; margin-top: 0!important; margin-left: 0!important; padding: 0 !important; }
-.inplace-comment-controller .inplace-form .comment { border: 1px solid #dbdbdb !important; width: 680px !important; top: 0px !important; }
+.add-bookmark-container .comment-container { border: none !important; background: none !important; width: 90% !important; color: #333 !important; margin-top: 0!important; margin-left: 0!important; padding: 0 !important; }
+.inplace-comment-controller .inplace-form .comment { border: 1px solid #dbdbdb !important; width: 90% !important; top: 0px !important; }
 .add-bookmark-container .comment-container:before,
 .add-bookmark-container .comment-container:after { display: none !important; }
 .add-bookmark-container li.self .inplace-comment-controller { top: 0 !important; left: 600px !important; }
@@ -95,7 +100,9 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 .add-bookmark-container li.self .comment-container .char-count { left: 633px !important; }
 #add-bookmark-container h4.entry-page-main-subtitle a.inner { color: #333 !important;}
 .add-bookmark-container .header{ margin: 0 !important;}
+.add-bookmark-form textarea#comment{width:90% !important;}
 .add-bookmark-form textarea#comment{color: #000 !important;}
+
 
 /*カテゴリータイトルを青に*/
 .box1_1 h2,
@@ -103,6 +110,7 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 .box3_2 h2 { margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; background-color: #2C6EBD !important; line-height: 1 !important; }
 
 /*ブコメ*/
+#scored-bookmarks{ clear:both !important;}
 #bookmarks { background: none !important; margin: 0 !important; }
 #bookmarks h4 { background: none !important; }
 #bookmarks .bookmark-list { padding: 0 !important; }
@@ -120,6 +128,7 @@ li.users { background-color: #FFCBCB !important; border-bottom: 1px solid #FF070
 li.users a { color: #FF0707 !important; }
 li.users a:hover { text-decoration: none !important; }
 li.users strong { font-weight: bold !important; }
+.entrylist-unit li.users{min-width:80px !important; text-align:center !important;}
 
 /*関連エントリー*/
 div.box3_1 ul.entry-list-m li.entry-list { min-height: auto !important; position: relative; }
@@ -134,7 +143,7 @@ ul.entry-list-m { padding: 0 !important; }
 ul.entry-meta { position: absolute; top: 5px !important; right: 5px !important; padding: 0 !important; border-bottom: none !important; }
 ul.entry-meta li.tag { display: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; }
-ul.users{ border: none !important; height: auto !important; float: left !important; font-size: 9px !important; margin: 5px 0.5% !important; border-bottom: none !important; width: 10% !important; text-align: center !important; padding: 0!important; }
+ul.users{ border: none !important; height: auto !important; float: left !important; font-size: 9px !important; margin: 5px 0.5% !important; border-bottom: none !important; min-width: 80px !important; text-align: center !important; padding: 0!important; }
 ul.users li { font-weight: bold !important; }
 ul.users li a{ padding-left: 0 !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; },
 ul.users strong span, ul.users em span, ul.users span { font-size: 9px !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; }
@@ -155,6 +164,11 @@ ul.entrylist-l li.entrylist-unit {padding: 5px 0px 5px 25px !important;}
 ul.entrylist-l li.entrylist-unit ul.entry-data li.domain img.favicon {left:0 !important;}
 ul.entrylist-l li.entrylist-unit h3,
 ul.entrylist-l li.entrylist-unit ul.entry-data {display:inline !important;}
+ul.entrylist-l li.entrylist-unit h3 a{color:#0056BD !important; font-weight:bold !important;}
 ul.entrylist-l li.entrylist-unit ul.entry-data li.category{display:none !important;}
 ul.entrylist-l li.entrylist-unit ul.entry-data li.domain{line-height:1 !important;}
 ul.users span{font-weight:bold !important; font-size:13px !important;}
+ul.entry-list-diary-l div.user-icon,
+div.user-icon a img{width:16px !important; height:16px !important;vertical-align: middle !important;}
+ul.entry-list-diary-l div.entry-contents {padding-left:25px !important;}
+div.box3_1 li.entry-list div.entry-contents{margin: 0 0 0 80px !important;}

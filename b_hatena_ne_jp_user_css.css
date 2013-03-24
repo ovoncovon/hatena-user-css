@@ -5,6 +5,10 @@ url-prefix("http://b.hatena.ne.jp/hotentry"),
 url-prefix("http://b.hatena.ne.jp/entrylist"),
 url-prefix("http://b.hatena.ne.jp/news")
 -------------------------------------------*/
+@media screen and (min-width:480px) and (max-width:960px) { 
+  div#container{width:90% !important;}  
+}
+
 /*背景カラー*/
 body { background-color: #F0F0F0 !important; }
 .box3_2,
@@ -61,7 +65,7 @@ ul.entry-list-m li.entry-list ul.entry-data li.category a { color: #FFFFFF !impo
 /*エントリーリスト*/
 ul.entry-data, ul.entry-data li { margin: 0 0 0 0 !important; }
 ul.entry-data li.date { line-height: 1!important; }
-.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 14px !important; }
+.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 100% !important; }
 .entry-vertical-3 { border: none !important; background: none !important; }
 li.entry-unit { width: 100% !important; border-bottom: 1px solid #ccc !important; overflow: hidden !important; position: relative !important; }
 li.entry-unit:last-child { border-bottom: none !important; }
@@ -90,6 +94,7 @@ ul.entry-data li.category a,
 ul.entry-vertical-4 ul.entry-data li.category a { margin-right: 5px !important; font-size: 12px !important; line-height: 1 !important; padding: 1px 7px !important; }
 
 /*レイアウト*/
+div.box-wrap{width:100% !important;}
 div.entry-contents { float: left !important; width: 80% !important; margin: 0 !important; padding: 5px 0 !important; border-bottom: none !important; }
 
 /*xxx user*/

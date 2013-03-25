@@ -6,27 +6,9 @@ url-prefix("http://b.hatena.ne.jp/entry/")
   div#container{width:90% !important;}  
 }
 
+body{ font:13px/1.231 sans-serif !important;background-color: #F0F0F0 !important;}
 
-/*旧ブックマーク個別ページ*/
-#header li { font-size: 100% !important; }
-#hatena-bookmark-entry #container { max-width: 960px !important; margin: 0 auto !important; }
-
-/*全体の幅*/
-#hatena-bookmark-entry #container .curvebox-body { padding: 10px 20px 0 20px !important; }
-/*サイドバー削除*/
-#hatena-bookmark-entry #sidebar { display: none !important; }
-
-#entry-info #ad { min-height: auto !important; }
-.bookmark-list li { padding: 6px 10px 6px 25px !important; overflow: hidden; line-height: 1.3!important; }
-.bookmark-list li:nth-child(odd) { background-color: #F1F1F1 !important; }
-.bookmark-list img.profile-image { float: none !important; margin: 0 0 0 -20px !important; width: 16px !important; height: 16px !important; vertical-align: middle; }
-.bookmark-list li div.header, .comment-container { display: inline !important; }
-.bookmark-list span.comment { padding: 0 !important; color: #000 !important; font-size: 100% !important; }
-#entry-content, #hatena-bookmark-entry blockquote { font-size: 100% !important; }
-.tweets { display: none !important; }
-
-/*新*/
-body { background-color: #F0F0F0 !important; }
+/*レイアウト*/
 div.box-wrap.box2.mix div.box3_1.notitle,
 div.box-wrap.box2.mix div.box3_2.notitle,
 div.box-wrap.box3.mix div.box3_1.notitle,
@@ -47,19 +29,28 @@ ul.entry-vertical-4,
 div.box-wrap.box1.mix ul.entry-list-l { background-image: none !important; }
 .box3_2 .box3_2{ border: none !important; margin-bottom:10px !important;}
 
+.bookmark-list li { padding: 8px 10px 8px 25px !important; overflow: hidden; line-height: 1.3!important; }
+.bookmark-list li:nth-child(odd) { background-color: #F1F1F1 !important; }
+.bookmark-list img.profile-image { float: none !important; margin: 0 0 0 -20px !important; width: 16px !important; height: 16px !important; vertical-align: middle; }
+.bookmark-list li div.header, .comment-container { display: inline !important; }
+.bookmark-list span.comment { padding: 0 !important; color: #000 !important; font-size: 100% !important; }
+#entry-content, #hatena-bookmark-entry blockquote { font-size: 100% !important; }
+
 /*ad*/
 body.entry ul.ad-head-text { background: none !important; }
+#entry-info #ad { min-height: auto !important; }
 
 /*エントリーコンテンツ*/
-.entry-page-unit .entry-contents{width : auto !important;}
+.entry-page-unit .entry-contents{width : auto !important;padding: 18px 25px 0 0 !important;}
 ul.entry-page-unit ul.entry-data li { height: auto !important; }
-ul.entry-page-unit ul.users span{ display:inline !important; font-size : 16px !important;}
+ul.entry-page-unit ul.users span{ display:inline !important;}
 ul.entry-page-unit ul.users { margin-top:18px !important; }
 ul.entry-page-unit ul.entry-data li.category a,
 ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 body.entry .entry-page-unit .entry-contents { border-top: none !important; }
 blockquote, blockquote a { color: #000 !important; line-height: 1.5 !important; }
 #entry-content a.pagelink{ display : block !important ;color : #0086DE !important; margin-left:0 !important;}
+li.category a{padding: 3px 7px !important;}
 
 /*お気に入りのブックマーク*/
 #favorite-bookmarks { padding-bottom: 0px !important; border-bottom: none !important; }
@@ -73,6 +64,7 @@ blockquote, blockquote a { color: #000 !important; line-height: 1.5 !important; 
 #public-bookmarks { clear: both !important; }
 
 /*タグ*/
+ul.entry-data li.tag {margin: 0 !important; }
 .tags a.user-tag,
 ul.entry-data li.tag a,
 ul.entry-meta li.tag a { background: none !important; float: none !important; color: green !important; margin: 0!important; padding: 0 6px 0 0 !important; font-size: 100% !important; }
@@ -82,7 +74,7 @@ ul.entry-meta li.tag a:before,
 .tags a.user-tag:after,
 ul.entry-data li.tag a:after,
 ul.entry-meta li.tag a:after { display: none !important; }
-ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
+ul.entry-page-unit ul.entry-data li.tag:before { content: "タグ："; }
 
 /*自分のコメント部分*/
 .add-bookmark-container { border: none !important; }
@@ -124,30 +116,31 @@ ul.entry-page-unit ul.entry-data li.tag::before { content: "タグ："; }
 #bookmarks .tags { padding-left: 0 !important; background-image:none !important;}
 
 /*xxx user*/
-li.users { background-color: #FFCBCB !important; border-bottom: 1px solid #FF0707 !important; }
-li.users a { color: #FF0707 !important; }
-li.users a:hover { text-decoration: none !important; }
-li.users strong { font-weight: bold !important; }
-.entrylist-unit li.users{min-width:80px !important; text-align:center !important;}
+.users{ background-color: #FFCBCB !important; width:10% !important; height:auto !important; border-top:none !important; border-bottom: 1px solid #FF0707 !important; font-weight:bold !important; float: left !important;text-align: center !important;text-transform: uppercase; padding:0 !important; margin-right:5px !important;}
+.users span{ display:inline !important;font-weight:bold !important;}
+.users a { color: #FF0707 !important; border-top:none !important;font-weight:bold !important; font-size:85% !important;}
 
 /*関連エントリー*/
-div.box3_1 ul.entry-list-m li.entry-list { min-height: auto !important; position: relative; }
+li.entry-list { min-height: auto !important; position: relative !important; padding: 5px !important;}
 ul.entry-data li.date { line-height: 1!important; }
 div.entry-contents { border: none !important; }
-.entry-contents h3 { margin: 0 !important; clear: none !important; line-height: 1 !important; }
+.entry-contents h3 { margin: 0 !important; clear: none !important; line-height: 1.2 !important; }
+
+/*entry-meta,entry-data*/
+.entry-data,
+.entry-meta{ display:inline !important; float:none !important;}
+.entry-meta{ position:absolute !important; right:0 !important; top:0.4em !important; margin:0 !important; padding:0 !important;}
+img.favicon {position: relative !important;top: auto !important;left: auto !important; vertical-align:middle !important;}
+li.entrylist-unit ul.entry-data li.category{ display:none !important;}
 
 /*リンクカラー*/
 div.entry-contents h3 a { color: #0056BD !important; }
 div.entry-contents h3 a:visited { color: #838 !important; }
+
 ul.entry-list-m { padding: 0 !important; }
-ul.entry-meta { position: absolute; top: 5px !important; right: 5px !important; padding: 0 !important; border-bottom: none !important; }
-ul.entry-meta li.tag { display: none !important; }
-ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; }
-ul.users{ border: none !important; height: auto !important; float: left !important; font-size: 9px !important; margin: 5px 0.5% !important; border-bottom: none !important; min-width: 80px !important; text-align: center !important; padding: 0!important; }
-ul.users li { font-weight: bold !important; }
-ul.users li a{ padding-left: 0 !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; },
-ul.users strong span, ul.users em span, ul.users span { font-size: 9px !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; }
-li.entry-list ul.users span { display: inline !important; }
+/*ul.entry-meta { position: absolute; top: 5px !important; right: 5px !important; padding: 0 !important; border-bottom: none !important; }*/
+/*ul.entry-meta li.tag { display: none !important; }
+ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; }*/
 
 /*こんなものいらない*/
 .box3_1,
@@ -160,14 +153,13 @@ body.entry div.box-wrap.box1.mix { display: none!important; }
 #sidebar-inner{position: relative !important; width:auto !important; top:0 !important;}
 
 /*関連エントリー関連*/
-ul.entrylist-l li.entrylist-unit {padding: 5px 0px 5px 25px !important;}
-ul.entrylist-l li.entrylist-unit ul.entry-data li.domain img.favicon {left:0 !important;}
-ul.entrylist-l li.entrylist-unit h3,
-ul.entrylist-l li.entrylist-unit ul.entry-data {display:inline !important;}
+ul.entrylist-l li.entrylist-unit {padding: 5px 0px !important;}
+/*ul.entrylist-l li.entrylist-unit ul.entry-data li.domain img.favicon {left:0 !important;}*/
+ul.entrylist-l li.entrylist-unit h3{line-height: 1 !important;}
 ul.entrylist-l li.entrylist-unit h3 a{color:#0056BD !important; font-weight:bold !important;}
-ul.entrylist-l li.entrylist-unit ul.entry-data li.category{display:none !important;}
-ul.entrylist-l li.entrylist-unit ul.entry-data li.domain{line-height:1 !important;}
-ul.users span{font-weight:bold !important; font-size:13px !important;}
+/*ul.entrylist-l li.entrylist-unit ul.entry-data li.category{display:none !important;}
+ul.entrylist-l li.entrylist-unit ul.entry-data li.domain{line-height:1 !important;}*/
+ul.users span{font-weight:bold !important; font-size:100% !important;}
 ul.entry-list-diary-l div.user-icon,
 div.user-icon a img{width:16px !important; height:16px !important;vertical-align: middle !important;}
 ul.entry-list-diary-l div.entry-contents {padding-left:25px !important;}

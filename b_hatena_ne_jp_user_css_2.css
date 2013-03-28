@@ -138,9 +138,6 @@ div.entry-contents h3 a { color: #0056BD !important; }
 div.entry-contents h3 a:visited { color: #838 !important; }
 
 ul.entry-list-m { padding: 0 !important; }
-/*ul.entry-meta { position: absolute; top: 5px !important; right: 5px !important; padding: 0 !important; border-bottom: none !important; }*/
-/*ul.entry-meta li.tag { display: none !important; }
-ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; }*/
 
 /*こんなものいらない*/
 .box3_1,
@@ -154,11 +151,8 @@ body.entry div.box-wrap.box1.mix { display: none!important; }
 
 /*関連エントリー関連*/
 ul.entrylist-l li.entrylist-unit {padding: 5px 0px !important;}
-/*ul.entrylist-l li.entrylist-unit ul.entry-data li.domain img.favicon {left:0 !important;}*/
 ul.entrylist-l li.entrylist-unit h3{line-height: 1 !important;}
 ul.entrylist-l li.entrylist-unit h3 a{color:#0056BD !important; font-weight:bold !important;}
-/*ul.entrylist-l li.entrylist-unit ul.entry-data li.category{display:none !important;}
-ul.entrylist-l li.entrylist-unit ul.entry-data li.domain{line-height:1 !important;}*/
 ul.users span{font-weight:bold !important; font-size:100% !important;}
 ul.entry-list-diary-l div.user-icon,
 div.user-icon a img{width:16px !important; height:16px !important;vertical-align: middle !important;}

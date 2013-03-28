@@ -75,6 +75,7 @@ li.entry-unit { margin: 0 !important; }
 li.entry-unit,
 li.entry-list { clear: both; padding: 0 !important; }
 ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
+.shim-elem-for-height{height: auto !important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; }

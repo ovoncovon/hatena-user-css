@@ -5,9 +5,17 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 body{ font:13px/1.231 sans-serif !important;background-color: #F0F0F0 !important;}
 
 /*レイアウト*/
-div#container{width:95% !important; max-width:960px !important; margin:0 auto !important;}  
+#container,
+#navi-foot{width:95% !important; max-width:960px !important; margin:0 auto !important;}  
 #main,
 #header-space{width:100% !important; }
+#footer #copyright,
+#footer .footer-link { position:relative!important;width:95% !important; max-width:960px !important; margin:0 auto !important;}
+
+/*ナビゲーション*/
+#navi-foot-category{ float:none !important;}
+#navi-foot-category,
+#navi-foot-category li{ height:auto !important; left:auto !important;}
 
 div.box-wrap.box2.mix div.box3_1.notitle,
 div.box-wrap.box2.mix div.box3_2.notitle,

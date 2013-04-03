@@ -8,9 +8,13 @@ url-prefix("http://b.hatena.ne.jp/news")
 body{ font:13px/1.231 sans-serif !important;}
 
 /*レイアウト*/
-#container{width:95% !important; max-width:960px !important; margin:0 auto !important;} 
+#container,
+#global-header #header,
+#navi-foot{width:95% !important; max-width:960px !important; margin:0 auto !important;} 
 #main,
 #branding{width:100% !important;}
+#footer #copyright,
+#footer .footer-link { position:relative!important;width:95% !important; max-width:960px !important; margin:0 auto !important;}
 
 /*背景カラー*/
 body { background-color: #F0F0F0 !important; }
@@ -19,7 +23,10 @@ body { background-color: #F0F0F0 !important; }
 
 /*ナビゲーション*/
 .navi-wrap{overflow:visible !important;}
-#navi-category{ height:auto !important;}
+#navi-category,
+#navi-foot-category{ height:auto !important; left:auto !important;}
+#navi-category li,
+#navi-foot-category li{ left:auto !important;}
 
 /*リンクカラー*/
 div.entry-contents h3 a { color: #0056BD !important; }

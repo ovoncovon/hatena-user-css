@@ -6,16 +6,21 @@ url-prefix("http://b.hatena.ne.jp/hotentry"),
 url-prefix("http://b.hatena.ne.jp/entrylist"),
 url-prefix("http://b.hatena.ne.jp/news")
 -------------------------------------------*/
-@media screen and (min-width:480px) and (max-width:960px) { 
-  div#container{width:90% !important;}  
-}
-
 body{ font:13px/1.231 sans-serif !important;}
+
+/*レイアウト*/
+#container{width:95% !important; max-width:960px !important; margin:0 auto !important;} 
+#main,
+#branding{width:100% !important;}
 
 /*背景カラー*/
 body { background-color: #F0F0F0 !important; }
 .box3_2,
 .box1_1{ background-color: white !important; }
+
+/*ナビゲーション*/
+.navi-wrap{overflow:visible !important;}
+#navi-category{ height:auto !important;}
 
 /*リンクカラー*/
 div.entry-contents h3 a { color: #0056BD !important; }
@@ -115,13 +120,13 @@ li.more-entry a { color: #383838 !important; padding: 10px 0 10px 0 !important; 
 Section 2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
-@media screen and (min-width:480px) and (max-width:960px) { 
-  div#container{width:90% !important;}  
-}
-
 body{ font:13px/1.231 sans-serif !important;background-color: #F0F0F0 !important;}
 
 /*レイアウト*/
+div#container{width:95% !important; max-width:960px !important; margin:0 auto !important;}  
+#main,
+#header-space{width:100% !important; }
+
 div.box-wrap.box2.mix div.box3_1.notitle,
 div.box-wrap.box2.mix div.box3_2.notitle,
 div.box-wrap.box3.mix div.box3_1.notitle,

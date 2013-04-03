@@ -2,13 +2,13 @@
 Section 2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
-@media screen and (min-width:480px) and (max-width:960px) { 
-  div#container{width:90% !important;}  
-}
-
 body{ font:13px/1.231 sans-serif !important;background-color: #F0F0F0 !important;}
 
 /*レイアウト*/
+div#container{width:95% !important; max-width:960px !important; margin:0 auto !important;}  
+#main,
+#header-space{width:100% !important; }
+
 div.box-wrap.box2.mix div.box3_1.notitle,
 div.box-wrap.box2.mix div.box3_2.notitle,
 div.box-wrap.box3.mix div.box3_1.notitle,

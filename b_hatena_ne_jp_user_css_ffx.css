@@ -15,8 +15,7 @@ body{ font:13px/1.231 sans-serif !important;}
 /*背景カラー*/
 body { background-color: #F0F0F0 !important; }
 .box3_2,
-.box1_1,
-ul#navi-category { background-color: white !important; }
+.box1_1{ background-color: white !important; }
 
 /*リンクカラー*/
 div.entry-contents h3 a { color: #0056BD !important; }

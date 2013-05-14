@@ -102,6 +102,10 @@ a.video span.play { display: none !important; }
 
 /*pr*/
 ul.entry-data li.pr { font-size: 93% !important; line-height: 1 !important; }
+/*ad*/
+.ad-unit div,
+.ad-unit iframe,
+.ad-banner{width:auto !important;height:auto !important;}
 
 /*カテゴリー・日付*/
 ul.entry-data { padding: 4px 0 0 0 !important; }
@@ -280,4 +284,11 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry div.user-icon a img{width:16px !important; height:16px !important;vertical-align: middle !important;}
 .entry ul.entry-list-diary-l div.entry-contents {padding-left:25px !important;}
 .entry div.box3_1 li.entry-list div.entry-contents{margin: 0 0 0 0 !important;}
+.entry ul.entry-meta li.domain{position:relative !important;}
+
+/*マイページ*/
+
+#hatena-bookmark-user-page,
+#hatena-bookmark-user-page .wrapper-container-inner{background-color:#fff !important;}
+#hatena-bookmark-user-page .entry-summary{line-height:1.5 !important;}
 }

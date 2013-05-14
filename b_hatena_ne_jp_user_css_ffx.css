@@ -287,8 +287,11 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-meta li.domain{position:relative !important;}
 
 /*マイページ*/
-
 #hatena-bookmark-user-page,
 #hatena-bookmark-user-page .wrapper-container-inner{background-color:#fff !important;}
 #hatena-bookmark-user-page .entry-summary{line-height:1.5 !important;}
+/*設定ページ*/
+#hatena-bookmark-config-global{background-color:#fff !important;}
+/*ヘルプページなど*/
+#sidebar{width:100%!important;margin-left: 0!important;}
 }

@@ -37,7 +37,7 @@ div.entry-contents h3 a:visited { color: #838 !important; }
 div.entry-contents blockquote,
 li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
-a.thumbnail { display: none !important; }
+.thumbnail { display: none !important; }
 
 /*復活*/
 ul.entry-list-xl ul.entry-data { display: block !important; }

@@ -155,7 +155,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry #entry-info #ad { min-height: auto !important; }
 
 /*エントリーコンテンツ*/
-.entry ul.entry-page-unit .entry-contents{width : auto !important;padding: 18px 25px 0 0 !important; border-top: none !important;}
+.entry ul.entry-page-unit .entry-contents{width : 100% !important;padding: 18px 0 0 0 !important; border-top: none !important;}
 .entry ul.entry-page-unit ul.entry-data li { height: auto !important; }
 .entry ul.entry-page-unit ul.users span{ display:inline !important;}
 .entry ul.entry-page-unit ul.users { margin-top:18px !important; position:absolute !important;}
@@ -168,10 +168,13 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit blockquote a { color: #000 !important; line-height: 1.5 !important; }
 .entry ul.entry-page-unit .thumbnail{ margin:0 20px 0 5px !important;}
 .entry ul.entry-page-unit a.pagelink{ display : block !important ;color : #0086DE !important; margin-left:0 !important;}
-.entry ul.entry-page-unit li.category,
-.entry ul.entry-page-unit #entry-paragraph-label{ margin-left:140px !important;}
 .entry ul.entry-page-unit li.category a{padding: 3px 7px !important;}
 .entry ul.entry-page-unit .entry-data li.tag{ clear:none !important;}
+/*このエントリーに含まれている商品*/
+.entry #asin-rel-item{ margin-top:1em !important;}
+/*このページの情報*/
+.entry #entry-info p{color:#000 !important;}
+.entry .thumbnail{display:block!important;}
 
 /*h2タイトル青背景*/
 .entry .box1_1 h2,

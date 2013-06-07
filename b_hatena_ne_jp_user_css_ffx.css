@@ -127,7 +127,7 @@ li.more-entry { margin: 0 5px 0 5px !important; overflow: hidden !important; }
 li.more-entry a {float: none !important; color: #383838 !important; padding: 10px 0 10px 0 !important; line-height: 1 !important; margin: 5px 0 5px 0px !important; }
 
 /*-----------------------------------------
-Section 2
+Section 1-2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
 
@@ -171,7 +171,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit li.category a{padding: 3px 7px !important;}
 .entry ul.entry-page-unit .entry-data li.tag{ clear:none !important;}
 /*このエントリーに含まれている商品*/
-.entry #asin-rel-item{ margin-top:1em !important;}
+.entry #asin-rel-item{ }
 /*このページの情報*/
 .entry #entry-info p{color:#000 !important;}
 .entry .thumbnail{display:block!important;}
@@ -297,4 +297,39 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 #hatena-bookmark-config-global{background-color:#fff !important;}
 /*ヘルプページなど*/
 #sidebar{width:100%!important;margin-left: 0!important;}
+}
+
+@-moz-document url("http://b.hatena.ne.jp/headline") {
+/*-----------------------------------------
+Section 2
+url-prefix("http://b.hatena.ne.jp/headline")
+-------------------------------------------*/
+
+body.headline {background-color: #FFF !important;}
+
+.headline .category-social .category a{color: #A78358 !important;}
+.headline .category-entertainment .category a{color: #F5AC0F !important;}
+.headline .category-life .category a{color: #308272 !important;}
+.headline .category-it .category a {color: #00A5DE !important;}
+.headline .category-economics .category a {color: #A78358 !important;}
+.headline .category-knowledge .category a {color: #308272 !important;}
+.headline .category-game .category a{color: #F5AC0F !important;}
+.headline .category-fun .category a {color: #F5AC0F !important;}
+
+.headline li.entry-unit,
+.headline li.entry-list {border-bottom: none !important;}
+.headline ul.entry-gallery-s li.entry-unit {background-color: #FFF !important;}
+.headline ul.entry-list-s li.entrylist-unit {padding: 1em 40px 1em 30px !important;}
+.headline .entry-contents h3{padding-right: 20px !important;}
+.headline ul.users{width:auto !important;}
+.headline ul.entry-gallery-s li.entry-unit div.thumbnail{display:block !important;right: 0 !important;top: 2em !important;left: auto !important;width:auto !important; height:auto !important;}
+.headline ul.entry-gallery-s li.entry-unit div.thumbnail a img {max-height: 77px!important;}
+.headline ul.nousers li.users,
+.headline ul.nocategory li.category,
+.headline ul.nodomain li.domain,
+.headline ul.nourl li.domain span,
+.headline ul.notag li.tag,
+.headline ul.nodate li.date {display: none!important;}
+
+.headline .entry-contents {width: 100% !important;}
 }

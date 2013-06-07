@@ -1,0 +1,32 @@
+/*-----------------------------------------
+Section 2
+url-prefix("http://b.hatena.ne.jp/headline")
+-------------------------------------------*/
+
+body.headline {background-color: #FFF !important;}
+
+.headline .category-social .category a{color: #A78358 !important;}
+.headline .category-entertainment .category a{color: #F5AC0F !important;}
+.headline .category-life .category a{color: #308272 !important;}
+.headline .category-it .category a {color: #00A5DE !important;}
+.headline .category-economics .category a {color: #A78358 !important;}
+.headline .category-knowledge .category a {color: #308272 !important;}
+.headline .category-game .category a{color: #F5AC0F !important;}
+.headline .category-fun .category a {color: #F5AC0F !important;}
+
+.headline li.entry-unit,
+.headline li.entry-list {border-bottom: none !important;}
+.headline ul.entry-gallery-s li.entry-unit {background-color: #FFF !important;}
+.headline ul.entry-list-s li.entrylist-unit {padding: 1em 40px 1em 30px !important;}
+.headline .entry-contents h3{padding-right: 20px !important;}
+.headline ul.users{width:auto !important;}
+.headline ul.entry-gallery-s li.entry-unit div.thumbnail{display:block !important;right: 0 !important;top: 2em !important;left: auto !important;width:auto !important; height:auto !important;}
+.headline ul.entry-gallery-s li.entry-unit div.thumbnail a img {max-height: 77px!important;}
+.headline ul.nousers li.users,
+.headline ul.nocategory li.category,
+.headline ul.nodomain li.domain,
+.headline ul.nourl li.domain span,
+.headline ul.notag li.tag,
+.headline ul.nodate li.date {display: none!important;}
+
+.headline .entry-contents {width: 100% !important;}

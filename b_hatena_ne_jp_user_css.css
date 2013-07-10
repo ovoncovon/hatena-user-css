@@ -76,7 +76,7 @@ li.entry-list:last-child { border-bottom: none !important; }
 ul.entry-data,
 ul.entry-data li { margin: 0 0 0 0 !important; }
 ul.entry-data li.date { line-height: 1.5 !important;}
-.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:auto !important; }
+.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:1em !important;}
 .entry-vertical-3 { border: none !important; background: none !important; }
 li.entry-unit { width: 100% !important; border-bottom: 1px solid #ccc !important; overflow: hidden !important; position: relative !important; }
 li.entry-unit:last-child { border-bottom: none !important; }
@@ -85,12 +85,12 @@ ul.entry-list-xl,
 ul.entry-list-l,
 li.entry-unit { margin: 0 !important; }
 li.entry-unit,
-li.entry-list { clear: both !important; padding: 0 !important; min-height: auto !important;border-bottom: 1px solid #ccc !important;}
+li.entry-list { clear: both !important; padding: 0 !important; min-height: 1em!important;border-bottom: 1px solid #ccc !important;}
 ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
-.shim-elem-for-height{height: auto !important;}
+.shim-elem-for-height{height:1em!important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
-ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; }
+ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
 ul.entry-meta li.tag { position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; }
 ul.entry-meta li.tag:before { content: 'タグ：'; }
 ul.entry-meta li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
@@ -126,7 +126,7 @@ li.more-entry { margin: 0 5px 0 5px !important; overflow: hidden !important; }
 li.more-entry a {float: none !important; color: #383838 !important; padding: 10px 0 10px 0 !important; line-height: 1 !important; margin: 5px 0 5px 0px !important; }
 
 /*-----------------------------------------
-Section 2
+Section 1-2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
 
@@ -160,6 +160,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit ul.users { margin-top:18px !important; position:absolute !important;}
 .entry ul.entry-page-unit h3{ padding: 0 0 0 12% !important;min-height:auto !important;}
 .entry ul.entry-page-unit ul.entry-data li.category a,
+
 .entry ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 .entry ul.entry-page-unit .thumbnail,
 .entry ul.entry-page-unit blockquote{ display : block !important;}
@@ -170,7 +171,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit li.category a{padding: 3px 7px !important;}
 .entry ul.entry-page-unit .entry-data li.tag{ clear:none !important;}
 /*このエントリーに含まれている商品*/
-.entry #asin-rel-item{ margin-top:1em !important;}
+.entry #asin-rel-item{ display:none !important;}
 /*このページの情報*/
 .entry #entry-info p{color:#000 !important;}
 .entry .thumbnail{display:block!important;}

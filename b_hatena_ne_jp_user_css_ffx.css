@@ -77,7 +77,7 @@ li.entry-list:last-child { border-bottom: none !important; }
 ul.entry-data,
 ul.entry-data li { margin: 0 0 0 0 !important; }
 ul.entry-data li.date { line-height: 1.5 !important;}
-.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:auto !important; }
+.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:1em !important;}
 .entry-vertical-3 { border: none !important; background: none !important; }
 li.entry-unit { width: 100% !important; border-bottom: 1px solid #ccc !important; overflow: hidden !important; position: relative !important; }
 li.entry-unit:last-child { border-bottom: none !important; }
@@ -86,12 +86,12 @@ ul.entry-list-xl,
 ul.entry-list-l,
 li.entry-unit { margin: 0 !important; }
 li.entry-unit,
-li.entry-list { clear: both !important; padding: 0 !important; min-height: auto !important;border-bottom: 1px solid #ccc !important;}
+li.entry-list { clear: both !important; padding: 0 !important; min-height: 1em!important;border-bottom: 1px solid #ccc !important;}
 ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
-.shim-elem-for-height{height: auto !important;}
+.shim-elem-for-height{height:1em!important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
-ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; }
+ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
 ul.entry-meta li.tag { position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; }
 ul.entry-meta li.tag:before { content: 'タグ：'; }
 ul.entry-meta li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
@@ -171,7 +171,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit li.category a{padding: 3px 7px !important;}
 .entry ul.entry-page-unit .entry-data li.tag{ clear:none !important;}
 /*このエントリーに含まれている商品*/
-.entry #asin-rel-item{ }
+.entry #asin-rel-item{ display:none !important;}
 /*このページの情報*/
 .entry #entry-info p{color:#000 !important;}
 .entry .thumbnail{display:block!important;}
@@ -297,39 +297,4 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 #hatena-bookmark-config-global{background-color:#fff !important;}
 /*ヘルプページなど*/
 #sidebar{width:100%!important;margin-left: 0!important;}
-}
-
-@-moz-document url("http://b.hatena.ne.jp/headline") {
-/*-----------------------------------------
-Section 2
-url-prefix("http://b.hatena.ne.jp/headline")
--------------------------------------------*/
-
-body.headline {background-color: #FFF !important;}
-
-.headline .category-social .category a{color: #A78358 !important;}
-.headline .category-entertainment .category a{color: #F5AC0F !important;}
-.headline .category-life .category a{color: #308272 !important;}
-.headline .category-it .category a {color: #00A5DE !important;}
-.headline .category-economics .category a {color: #A78358 !important;}
-.headline .category-knowledge .category a {color: #308272 !important;}
-.headline .category-game .category a{color: #F5AC0F !important;}
-.headline .category-fun .category a {color: #F5AC0F !important;}
-
-.headline li.entry-unit,
-.headline li.entry-list {border-bottom: none !important;}
-.headline ul.entry-gallery-s li.entry-unit {background-color: #FFF !important;}
-.headline ul.entry-list-s li.entrylist-unit {padding: 1em 40px 1em 30px !important;}
-.headline .entry-contents h3{padding-right: 20px !important;}
-.headline ul.users{width:auto !important;}
-.headline ul.entry-gallery-s li.entry-unit div.thumbnail{display:block !important;right: 0 !important;top: 2em !important;left: auto !important;width:auto !important; height:auto !important;}
-.headline ul.entry-gallery-s li.entry-unit div.thumbnail a img {max-height: 77px!important;}
-.headline ul.nousers li.users,
-.headline ul.nocategory li.category,
-.headline ul.nodomain li.domain,
-.headline ul.nourl li.domain span,
-.headline ul.notag li.tag,
-.headline ul.nodate li.date {display: none!important;}
-
-.headline .entry-contents {width: 100% !important;}
 }

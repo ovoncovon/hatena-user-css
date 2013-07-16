@@ -67,7 +67,7 @@ div#branding div#total { width: 50% !important; text-align: right !important; }
 .entry-horizontal-s{ border: 1px solid #CCC !important; border-radius: 0 0 4px 4px !important; border-top: none !important; background-color: white !important; padding: 0 0 !important; }
 .box3_1 h2 { margin: 15px 0 0 0 !important; }
 .box-wrap.box3.mix { margin-top: 0 !important; }
-li.entry-list { min-height: auto !important; position: relative !important; border-bottom: 1px solid #ccc !important; }
+li.entry-list { min-height: 1em !important; position: relative !important; border-bottom: 1px solid #ccc !important; }
 li.entry-list:last-child { border-bottom: none !important; }
 .box3_1 li.entry-list .entry-contents h3 { float: none !important; font-size: 116% !important; }
 .box3_1 li.entry-list .entry-contents { border-top: none !important; }
@@ -107,7 +107,7 @@ ul.entry-data li.pr { font-size: 93% !important; line-height: 1 !important; }
 .ad-banner{width:auto !important;height:auto !important;}
 
 /*カテゴリー・日付*/
-ul.entry-data { padding: 4px 0 0 0 !important; }
+ul.entry-data { padding: 4px 0 0 0 !important; min-height:1em !important; }
 li.category { display: block !important; line-height: 1 !important;}
 li.category a{margin-right: 5px !important; color: #FFFFFF !important;padding: 1px 7px !important; display: block !important; font-weight: normal !important; font-size:93% !important;}
 
@@ -151,14 +151,14 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 
 /*ad*/
 .entry ul.ad-head-text { background: none !important; }
-.entry #entry-info #ad { min-height: auto !important; }
+.entry #entry-info #ad { min-height: 1px !important; }
 
 /*エントリーコンテンツ*/
 .entry ul.entry-page-unit .entry-contents{width : 100% !important;padding: 18px 0 0 0 !important; border-top: none !important;}
 .entry ul.entry-page-unit ul.entry-data li { height: auto !important; }
 .entry ul.entry-page-unit ul.users span{ display:inline !important;}
 .entry ul.entry-page-unit ul.users { margin-top:18px !important; position:absolute !important;}
-.entry ul.entry-page-unit h3{ padding: 0 0 0 12% !important;min-height:auto !important;}
+.entry ul.entry-page-unit h3{ padding: 0 0 0 12% !important;min-height:1em !important;}
 .entry ul.entry-page-unit ul.entry-data li.category a,
 
 .entry ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
@@ -250,7 +250,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry .users a { color: #FF0707 !important; border-top:none !important;font-weight:bold !important; font-size:85% !important;}
 
 /*関連エントリー*/
-.entry li.entry-list { min-height: auto !important; position: relative !important; padding: 5px !important;}
+.entry li.entry-list { min-height: 1em !important; position: relative !important; padding: 5px !important;}
 .entry ul.entry-data li.date { line-height: 1!important; }
 .entry .entry-contents { border: none !important; }
 .entry .entry-contents h3 { margin: 0 !important; clear: none !important; line-height: 1.2 !important; }

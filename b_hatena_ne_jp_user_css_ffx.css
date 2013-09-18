@@ -89,6 +89,8 @@ li.entry-unit,
 li.entry-list { clear: both !important; padding: 0 !important; min-height: 1em!important;border-bottom: 1px solid #ccc !important;}
 ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
 .shim-elem-for-height{height:1em!important;}
+ul.entry-horizontal-l {min-height: 1em !important;}
+li.description{min-height: 1em !important; width:auto !important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}

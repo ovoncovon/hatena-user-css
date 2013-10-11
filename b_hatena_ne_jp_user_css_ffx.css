@@ -248,6 +248,8 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry #bookmarks .comment-container:before,
 .entry #bookmarks .comment-container:after { display: none !important; }
 .entry #bookmarks .tags { padding-left: 0 !important; background-image:none !important;}
+.entry #bookmarks .bookmark-list .nocomment{ display:none !important;}
+.entry #bookmarks #all-bookmarks .bookmark-list li:nth-child(odd){background-color: #FFF !important;}
 
 /*xxx user*/
 .entry .users{ background-color: #FFCBCB !important; width:10% !important; height:auto !important; border-top:none !important; border-bottom: 1px solid #FF0707 !important; font-weight:bold !important; float: left !important;text-align: center !important;text-transform: uppercase; padding:0 !important; margin-right:5px !important;}

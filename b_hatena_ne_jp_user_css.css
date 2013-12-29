@@ -38,6 +38,9 @@ li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
 .thumbnail { display: none !important; }
 
+/*Amazonリンク*/
+ul[data-track-event-name ^="amazon.entrylist"]{ display: none !important; }
+
 /*復活*/
 ul.entry-list-xl ul.entry-data { display: block !important; }
 
@@ -55,10 +58,17 @@ div.box1_1 li.more-entry { background-image: none !important; }
 /*ヘッダentry,bookmark数*/
 div#branding div#total { width: 50% !important; text-align: right !important; }
 
-/*カテゴリータイトルを青に*/
+/*カテゴリータイトル*/
 .box1_1 h2,
 .box3_1 h2,
-.box3_2 h2 { margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; line-height: 1 !important; background: url(/images/entry_title_bg.gif) top right #2c6ebd !important; }
+.box3_2 h2,
+#appendix h3.unit-title{ margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; line-height: 1 !important; background: url(/images/entry_title_bg.gif) top right #2c6ebd !important; }
+.bnews h2 a,
+#appendix h3.unit-title a{ color: #fff !important;}
+
+/*新着ブックマーク*/
+#appendix{ width: auto !important;}
+#appendix div.box-wrap {margin-bottom:30px !important;}
 
 /*カテゴリ別ホッテントリ*/
 .box3_1 { width: 100% !important; margin: 0px !important; }
@@ -90,8 +100,7 @@ ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
 .shim-elem-for-height{height:1em!important;}
 ul.entry-horizontal-l {min-height: 1em !important;}
 li.description{min-height: 1em !important; width:auto !important;}
-ul.entry-vertical-3 ul.entry-data li.date,
-ul.entry-vertical-4 ul.entry-data li.date{margin:0 !important;}
+body.category-social li.entry-unit ul.entry-data li.date, body.category-economics li.entry-unit ul.entry-data li.date, body.category-life li.entry-unit ul.entry-data li.date, body.category-knowledge li.entry-unit ul.entry-data li.date, body.category-it li.entry-unit ul.entry-data li.date, body.category-entertainment li.entry-unit ul.entry-data li.date, body.category-game li.entry-unit ul.entry-data li.date, body.category-fun li.entry-unit ul.entry-data li.date{margin:0 !important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
@@ -164,6 +173,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit ul.users { margin-top:18px !important; position:absolute !important;}
 .entry ul.entry-page-unit h3{ padding: 0 0 0 12% !important;min-height:1em !important;}
 .entry ul.entry-page-unit ul.entry-data li.category a,
+
 .entry ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 .entry ul.entry-page-unit .thumbnail,
 .entry ul.entry-page-unit blockquote{ display : block !important;}

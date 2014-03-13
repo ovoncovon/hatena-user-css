@@ -36,10 +36,11 @@ div.entry-contents h3 a:visited { color: #838 !important; }
 div.entry-contents blockquote,
 li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
-.thumbnail { display: none !important; }
+.thumbnail,
+.entry-unit.pseudo-entry-unit { display: none !important; }
 
 /*Amazonリンク*/
-ul[data-track-event-name ^="amazon.entrylist"]{ display: none !important; }
+li.recommended { background-color:#FFEFD3 !important;}
 
 /*復活*/
 ul.entry-list-xl ul.entry-data { display: block !important; }
@@ -104,7 +105,7 @@ body.category-social li.entry-unit ul.entry-data li.date, body.category-economic
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
 ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
-ul.entry-meta li.tag { position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; }
+ul.entry-meta li.tag { display:block !important; position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; }
 ul.entry-meta li.tag:before { content: 'タグ：'; }
 ul.entry-meta li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
 ul.entry-meta li.tag a:before,
@@ -165,6 +166,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 /*ad*/
 .entry ul.ad-head-text { background: none !important; }
 .entry #entry-info #ad { min-height: 1px !important; }
+.entry .ads-entry { height:auto !important}
 
 /*エントリーコンテンツ*/
 .entry ul.entry-page-unit .entry-contents{width : 100% !important;padding: 18px 0 0 0 !important; border-top: none !important;}
@@ -256,8 +258,6 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry #bookmarks .comment-container:before,
 .entry #bookmarks .comment-container:after { display: none !important; }
 .entry #bookmarks .tags { padding-left: 0 !important; background-image:none !important;}
-.entry #bookmarks .bookmark-list .nocomment{ display:none !important;}
-.entry #bookmarks #all-bookmarks .bookmark-list li:nth-child(odd){background-color: #FFF !important;}
 
 /*xxx user*/
 .entry .users{ background-color: #FFCBCB !important; width:10% !important; height:auto !important; border-top:none !important; border-bottom: 1px solid #FF0707 !important; font-weight:bold !important; float: left !important;text-align: center !important;text-transform: uppercase; padding:0 !important; margin-right:5px !important;}

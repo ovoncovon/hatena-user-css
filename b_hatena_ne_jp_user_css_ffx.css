@@ -131,13 +131,14 @@ li.category a{margin-right: 5px !important; color: #FFFFFF !important;padding: 1
 
 /*レイアウト*/
 .box-wrap{width:100% !important;}
-.entry-contents { float: left !important; width: 80% !important; margin: 0 !important; padding: 5px 0 !important; border-bottom: none !important; min-height:min-content !important; }
+.entry-contents { float: left !important; width: 80% !important; margin: 0 !important; padding: 5px 0 !important; border-bottom: none !important; min-height:0 !important; }
 
 /*xxx user*/
 ul.users { border: none !important; font-weight: bold !important; height: auto !important; float: left !important; font-size: 100% !important; margin: 8px 0.5% !important;padding: 0 !important; border-bottom: none !important; width: 10% !important; text-align: center !important; padding: 0!important; }
 ul.users li { font-weight: bold !important;}
 ul.users li a { padding: 0 !important; font-weight: bold !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; }
 ul.users span { font-size: 100% !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; display:inline !important; }
+ul.entry-horizontal-l ul.users li a{ padding: 0 !important;}
 
 /*もっと読む*/
 li.more-entry { margin: 0 5px 0 5px !important; overflow: hidden !important; }

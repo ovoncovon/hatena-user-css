@@ -102,7 +102,7 @@ li.entry-unit,
 li.entry-list { clear: both !important; padding: 0 !important; min-height: 1em!important;border-bottom: 1px solid #ccc !important;}
 ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
 .shim-elem-for-height{height:1em!important;}
-ul.entry-horizontal-l {min-height: 1em !important;}
+ul.entry-horizontal-l {min-height: 1em !important; padding:0!important;}
 li.description{min-height: 1em !important; width:auto !important;}
 body.category-social li.entry-unit ul.entry-data li.date, body.category-economics li.entry-unit ul.entry-data li.date, body.category-life li.entry-unit ul.entry-data li.date, body.category-knowledge li.entry-unit ul.entry-data li.date, body.category-it li.entry-unit ul.entry-data li.date, body.category-entertainment li.entry-unit ul.entry-data li.date, body.category-game li.entry-unit ul.entry-data li.date, body.category-fun li.entry-unit ul.entry-data li.date{margin:0 !important;}
 
@@ -164,7 +164,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry .bookmark-list li:nth-child(odd) { background-color: #F1F1F1 !important; }
 .entry .bookmark-list img.profile-image { float: none !important; margin: 0 0 0 -20px !important; width: 16px !important; height: 16px !important; vertical-align: middle; }
 .entry .bookmark-list li div.header, .comment-container { display: inline !important; }
-.entry .bookmark-list span.comment { padding: 0 !important; color: #000 !important; font-size: 100% !important; }
+.entry .bookmark-list span.comment { padding: 0 !important; color: #000 !important; font-size: 100% !important; line-height:1.5 !important; }
 .entry #entry-content, #hatena-bookmark-entry blockquote { font-size: 100% !important; }
 
 /*ad*/
@@ -264,6 +264,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry #bookmarks .comment-container:before,
 .entry #bookmarks .comment-container:after { display: none !important; }
 .entry #bookmarks .tags { padding-left: 0 !important; background-image:none !important;}
+.entry #bookmarks .profile-icon{ margin:0 !important;}
 
 /*xxx user*/
 .entry .users{ background-color: #FFCBCB !important; width:10% !important; height:auto !important; border-top:none !important; border-bottom: 1px solid #FF0707 !important; font-weight:bold !important; float: left !important;text-align: center !important;text-transform: uppercase; padding:0 !important; margin-right:5px !important;}
@@ -282,6 +283,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry .entry-meta{ position:absolute !important; right:0 !important; top:0.4em !important; margin:0 !important; padding:0 !important;}
 .entry .favicon {position: relative !important;top: auto !important;left: auto !important; vertical-align:middle !important;}
 .entry li.entrylist-unit ul.entry-data li.category{ display:none !important;}
+.entry .user-comment-meta{ display:inline !important;}
 
 /*リンクカラー*/
 .entry .entry-contents h3 a { color: #0056BD !important; }

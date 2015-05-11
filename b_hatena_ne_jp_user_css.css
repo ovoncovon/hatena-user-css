@@ -37,7 +37,8 @@ div.entry-contents blockquote,
 li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
 .thumbnail,
-.entry-unit.pseudo-entry-unit { display: none !important; }
+.entry-unit.pseudo-entry-unit,
+.topic-entryunit{ display: none !important; }
 
 /*Amazonリンク*/
 li.recommended { background-color:#FFEFD3 !important;}
@@ -59,13 +60,17 @@ div.box1_1 li.more-entry { background-image: none !important; }
 /*ヘッダentry,bookmark数*/
 div#branding div#total { width: 50% !important; text-align: right !important; }
 
+/*あとで読むアイコン*/
+.readlater-button{position:absolute; left:-0.5em; top:1em;}
+
 /*カテゴリータイトル*/
 .box1_1 h2,
 .box3_1 h2,
 .box3_2 h2,
 #appendix h3.unit-title{ margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; line-height: 1 !important; background: url(/images/entry_title_bg.gif) top right #2c6ebd !important; }
 .bnews h2 a,
-#appendix h3.unit-title a{ color: #fff !important;}
+#appendix h3.unit-title a,
+.box1_1 h2 a{ color: #fff !important;}
 
 /*おすすめサブカテゴリー*/
 #pickup,.additional-unit{ display: none !important;}
@@ -138,6 +143,9 @@ ul.users li { font-weight: bold !important;}
 ul.users li a { padding: 0 !important; font-weight: bold !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; }
 ul.users span { font-size: 100% !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; display:inline !important; }
 ul.entry-horizontal-l ul.users li a{ padding: 0 !important;}
+
+/*ranking*/
+.ranking .users-small{margin:auto !important;}
 
 /*もっと読む*/
 li.more-entry { margin: 0 5px 0 5px !important; overflow: hidden !important; }

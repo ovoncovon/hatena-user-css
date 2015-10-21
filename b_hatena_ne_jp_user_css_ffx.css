@@ -125,6 +125,16 @@ ul.entry-meta li.tag a:after { border: none !important; content: '' !important; 
 
 a.video span.play { display: none !important; }
 
+/*特集*/
+div.issue-unit div.entry-contents{border-top: none !important;background-color: #f5f5f5 !important; width: 100% !important; padding: 5px !important;}
+.issue-unit .entry-contents h3 {display:inline !important; margin-left:5px !important;}
+.issue-unit .entry-data {display:inline !important;}
+.issue-unit .entry-data .description{display:none !important;}
+.issue-unit .issue-entrylist,
+.issue-unit .issue-entrylist:hover{background-color: #fff !important; cursor: default !important;}
+.issue-entrylist li a {text-overflow: inherit !important; max-width: inherit !important; overflow: inherit !important;color: #0056BD !important; font-weight: bold !important;}
+.entry-unit:last-child {border-bottom: 1px solid #ECECEC !important;}
+
 /*pr*/
 ul.entry-data li.pr { font-size: 93% !important; line-height: 1 !important; }
 /*ad*/

@@ -23,10 +23,12 @@ body { background-color: #F0F0F0 !important; }
 
 /*ナビゲーション*/
 .navi-wrap{overflow:visible !important;}
-#navi-category,
-#navi-foot-category{ height:auto !important; left:auto !important;}
-#navi-category li,
-#navi-foot-category li{ left:auto !important;}
+#navi-category{ text-align:center !important; font-size:0 !important; width:100% !important;}
+#navi-category > li{ background-color:#fff !important; display:inline-block !important; float:none !important; font-size:100% !important;}
+#navi-category li.navi-border-left,
+#navi-category li.navi-border-right {display:none !important;}
+#navi-mode li{ background-color:#fff !important;border-radius:4px; }
+.navi-item-detail{display:none!important;}
 
 /*リンクカラー*/
 div.entry-contents h3 a { color: #0056BD !important; }
@@ -67,6 +69,7 @@ div#branding div#total { width: 50% !important; text-align: right !important; }
 .box1_1 h2,
 .box3_1 h2,
 .box3_2 h2,
+.section-title,
 #appendix h3.unit-title{ margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; line-height: 1 !important; background: url(/images/entry_title_bg.gif) top right #2c6ebd !important; }
 .bnews h2 a,
 #appendix h3.unit-title a,
@@ -187,7 +190,6 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry ul.entry-page-unit ul.users { margin-top:18px !important; position:absolute !important;}
 .entry ul.entry-page-unit h3{ padding: 0 0 0 12% !important;min-height:1em !important;}
 .entry ul.entry-page-unit ul.entry-data li.category a,
-
 .entry ul.entry-page-unit ul.entry-data li.users a { line-height: 1 !important; }
 .entry ul.entry-page-unit .thumbnail,
 .entry ul.entry-page-unit blockquote{ display : block !important;}
@@ -222,7 +224,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry #public-bookmarks { clear: both !important; }
 
 /*タグ*/
-.entry ul.entry-data li.tag {margin: 0 !important; }
+.entry ul.entry-data li.tag {margin: 10px 0 !important; }
 .entry .tags a.user-tag,
 .entry ul.entry-data li.tag a,
 .entry ul.entry-meta li.tag a { background: none !important; float: none !important; color: green !important; margin: 0!important; padding: 0 6px 0 0 !important; font-size: 100% !important; }
@@ -260,6 +262,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry .box3_2 h2 { margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; background-color: #2C6EBD !important; line-height: 1 !important; }
 
 /*ブコメ*/
+.entry ul.tab-navi li{ max-width:none !important;}
 .entry #scored-bookmarks{ clear:both !important;}
 .entry #bookmarks { background: none !important; margin: 0 !important; }
 .entry #bookmarks h4 { background: none !important; }
@@ -283,7 +286,7 @@ url-prefix("http://b.hatena.ne.jp/entry/")
 .entry li.entry-list { min-height: 1em !important; position: relative !important; padding: 5px !important;}
 .entry ul.entry-data li.date { line-height: 1!important; }
 .entry .entry-contents { border: none !important; }
-.entry .entry-contents h3 { margin: 0 !important; clear: none !important; line-height: 1.2 !important; }
+.entry .entry-contents h3 { margin: 0 0 10px 0 !important; clear: none !important; line-height: 1.2 !important; }
 
 /*entry-meta,entry-data*/
 .entry .entry-data,

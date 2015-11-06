@@ -24,21 +24,23 @@ body { background-color: #F0F0F0 !important; }
 /*ナビゲーション*/
 .navi-wrap{overflow:visible !important;}
 #navi-category{ text-align:center !important; font-size:0 !important; width:100% !important;}
-#navi-category > li{ background-color:#fff !important; display:inline-block !important; float:none !important; font-size:100% !important;}
+#navi-category > li{ background-color:#fff !important; display:inline-block !important; float:none !important;}
 #navi-category li.navi-border-left,
 #navi-category li.navi-border-right {display:none !important;}
 #navi-mode li{ background-color:#fff !important;border-radius:4px; }
-.navi-item-detail{display:none!important;}
+#navi-category .subcategory{ text-align:left !important;}
 
 /*リンクカラー*/
-div.entry-contents h3 a { color: #0056BD !important; }
-div.entry-contents h3 a:visited { color: #838 !important; }
+.entry-unit h3 a,
+.entrylist-unit h3 a { color: #0056BD !important; }
+.entry-unit h3 a:visited,
+.entrylist-unit h3 a:visited{ color: #838 !important; }
 
 /*非表示ブロック*/
 div.entry-contents blockquote,
 li.entry-unit ul.entry-comment,
 li.entry-unit .follow.hb-favorites-appended,
-.thumbnail,
+.description .thumbnail,
 .entry-unit.pseudo-entry-unit,
 .topic-entryunit{ display: none !important; }
 
@@ -63,7 +65,7 @@ div.box1_1 li.more-entry { background-image: none !important; }
 div#branding div#total { width: 50% !important; text-align: right !important; }
 
 /*あとで読むアイコン*/
-.readlater-button{position:absolute; left:-0.5em; top:1em;}
+.entry-unit .readlater-button{position:absolute!important; left:-0.5em!important; top:1em!important;}
 
 /*カテゴリータイトル*/
 .box1_1 h2,
@@ -91,14 +93,18 @@ div#branding div#total { width: 50% !important; text-align: right !important; }
 .box-wrap.box3.mix { margin-top: 0 !important; }
 li.entry-list { min-height: 1em !important; position: relative !important; border-bottom: 1px solid #ccc !important; }
 li.entry-list:last-child { border-bottom: none !important; }
-.box3_1 li.entry-list .entry-contents h3 { float: none !important; font-size: 116% !important; }
-.box3_1 li.entry-list .entry-contents { border-top: none !important; }
+.entry-list .entry-contents h3,
+.entrylist-unit h3 { float: none !important; font-size: 116% !important; }
+.entry-list .entry-contents,
+.tag-recommend-entrylist-unit { border-top: none !important; }
+.tag-recommend-entrylist-unit .readlater-button{ position:absolute !important; left:5px !important; top:10px !important;}
 
 /*エントリーリスト*/
 ul.entry-data,
 ul.entry-data li { margin: 0 0 0 0 !important; }
 ul.entry-data li.date { line-height: 1.5 !important;}
-.entry-contents h3 { margin: 0 !important; padding-right: 110px !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:1em !important;}
+.entry-contents h3,
+.entrylist-unit h3 { margin: 0 !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:1em !important;}
 .entry-vertical-3 { border: none !important; background: none !important; }
 li.entry-unit { width: 100% !important; border-bottom: 1px solid #ccc !important; overflow: hidden !important; position: relative !important; }
 li.entry-unit:last-child { border-bottom: none !important; }
@@ -115,12 +121,18 @@ li.description{min-height: 1em !important; width:auto !important;}
 body.category-social li.entry-unit ul.entry-data li.date, body.category-economics li.entry-unit ul.entry-data li.date, body.category-life li.entry-unit ul.entry-data li.date, body.category-knowledge li.entry-unit ul.entry-data li.date, body.category-it li.entry-unit ul.entry-data li.date, body.category-entertainment li.entry-unit ul.entry-data li.date, body.category-game li.entry-unit ul.entry-data li.date, body.category-fun li.entry-unit ul.entry-data li.date{margin:0 !important;}
 
 ul.entry-meta { padding: 0 !important; border: none !important; }
-ul.entry-meta li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
-ul.entry-meta li.tag { display:block !important; position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; }
-ul.entry-meta li.tag:before { content: 'タグ：'; }
-ul.entry-meta li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
-ul.entry-meta li.tag a:before,
-ul.entry-meta li.tag a:after { border: none !important; content: '' !important; }
+.box-wrap li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
+.entrylist-unit li.domain{ position:inherit !important;}
+.box-wrap li.tag { display:block !important; position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; width:auto !important;}
+.box-wrap li.tag:before { content: 'タグ：'; }
+.box-wrap li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
+.box-wrap li.tag a:before,
+.box-wrap li.tag a:after { border: none !important; content: '' !important; }
+.box-wrap .tag a span { width:auto!important; overflow:inherit!important; text-overflow:inherit!important;}
+
+/*技術ブログ*/
+.tag-recommend-entrylist-unit .blog-register {float:inherit!important; margin: 1em!important;}
+.tag-recommend-entrylist-unit li.entrylist-unit:first-child {padding: 5px 16px 5px 24px!important;}
 
 a.video span.play { display: none !important; }
 

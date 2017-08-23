@@ -33,4 +33,4 @@ https://addons.mozilla.org/ja/firefox/addon/stylish/
 
 Opera Browser
 --------
-* http://b.hatena.ne.jp/ を開き何もないところで右クリック→サイトごとの設定を編集...→表示設定→ユーザースタイルシート→選択ボタンでb_hatena_ne_jp_user_css.cssを指定する
+* Google Chromeと同じくstylishを使う。

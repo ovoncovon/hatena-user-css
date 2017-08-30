@@ -190,13 +190,25 @@ Section 1-2
 url-prefix("http://b.hatena.ne.jp/entry/")
 -------------------------------------------*/
 
-.page-entry .entry-contents{ width:100% !important;float: none !important; display:block !important; padding-top:0 !important;}
+.page-entry .entry-contents{ width:100% !important;float: none !important; display:block !important; padding-top:0 !important ;border: 1px solid #ccc !important ;border-radius: 4px !important;}
 .page-entry .entry-main{border-right:none !important; padding:0 0 !important;}
 .page-entry .entry-wrapper{ background-color:#fff !important; }
-.page-entry .entry-bookmark{ border:none !important;}
+.page-entry .entry-bookmark{ border:none !important; margin-bottom:15px;}
 .page-entry .entry-aside{ padding:0 !important;}
 .page-entry .entry-comment-contents {border-bottom: 1px solid #ccc !important; padding: 5px 36px 5px 52px !important;}
 .page-entry .entry-comment-contents:nth-child(odd){ background-color:#f7f7f7 !important;}
+.page-entry .entry-info-title a{ color:#0056bd;}
+.page-entry .entry-info-title a:hover{ text-decoration: underline;}
+.page-entry .entry-info-users a{font-weight: bold !important;padding:2px; color: #FF0707 !important; background-color: #FFCBCB !important; border-bottom: 1px solid #FF0707 !important;}
+.page-entry .entry-main a:hover { text-decoration: none !important;}
+.page-entry .entry-info { padding: 15px !important;}
+.page-entry .entry-info-title,.page-entry .entry-info-meta{ margin-bottom:.2em !important;}
+.page-entry .entry-myBookmark{ margin: 0 15px !important;}
+.page-entry .entry-comment-tab{border-bottom: 3px solid #008fde !important;}
+.page-entry .entry-comment-tab li { background-color: #bbb !important; color: #fff !important; font-weight: normal !important; border-bottom:none !important; margin-bottom:0 !important;}
+.page-entry .entry-comment-tab li.is-active { border-bottom:none !important; background-color: #008fde !important; color: #fff !important;}
+.page-entry .entry-comment-meta{ line-height:1 !important;}
+.page-entry .entry-comment-tags li a{ color:#256e15 !important;}
 /*ぱんくず*/
 .page-entry .breadcrumb-wrapper{ background-color: #F0F0F0 !important; padding:5px 0 !important;}
 .page-entry .breadcrumb-share{-ms-flex-preferred-size: calc(100%/8) !important; flex-basis: calc(100%/8) !important;}

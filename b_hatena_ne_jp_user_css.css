@@ -1,223 +1,172 @@
-/*-----------------------------------------
-Section 1
-url("http://b.hatena.ne.jp/"), 
-url-prefix("http://b.hatena.ne.jp/hotentry"),
-url-prefix("http://b.hatena.ne.jp/entrylist"),
-url-prefix("http://b.hatena.ne.jp/news")
--------------------------------------------*/
-body.media-page { font:13px/1.231 sans-serif !important;}
+body {
+	background-color: #f0f0f0;
+}
 
-/*レイアウト*/
-.media-page #container,
-#global-header #header,
-#navi-foot{width:95% !important; max-width:960px !important; margin:0 auto !important;} 
-#main,
-#branding{width:100% !important;}
-#footer #copyright,
-#footer .footer-link { position:relative!important;width:95% !important; max-width:960px !important; margin:0 auto !important;}
+.branding {
+	background-color: #fff;
+}
 
-/*背景カラー*/
-body { background-color: #F0F0F0 !important; }
-.box3_2,
-.box1_1{ background-color: white !important; }
+.navi-body {
+	display: table;
+	width: 960px;
+}
 
-/*ナビゲーション*/
-.navi-wrap{overflow:visible !important;}
-#navi-category{ text-align:center !important; font-size:0 !important; width:100% !important;}
-#navi-category > li{ background-color:#fff !important; display:inline-block !important; float:none !important;}
-#navi-category li.navi-border-left,
-#navi-category li.navi-border-right {display:none !important;}
-#navi-mode li{ background-color:#fff !important;border-radius:4px; }
-#navi-category .subcategory{ text-align:left !important;}
+.navi-body li {
+	display: table-cell;
+}
 
-/*リンクカラー*/
-.entry-unit h3 a,
-.entrylist-unit h3 a,
-.entry-contents h3 a { color: #0056BD !important; }
-.entry-unit h3 a:visited,
-.entrylist-unit h3 a:visited{ color: #838 !important; }
+.entrylist-header,
+.entrylist-item {
+	display: block;
+	border: none;
+}
 
-/*非表示ブロック*/
-div.entry-contents blockquote,
-li.entry-unit ul.entry-comment,
-li.entry-unit .follow.hb-favorites-appended,
-.description .thumbnail,
-.entry-unit.pseudo-entry-unit,
-.topic-entryunit,
-#toppage-banner-top{ display: none !important; }
+.entrylist-header-main {
+	border-right: none;
+	max-width: 100%;
+}
 
-/*Amazonリンク*/
-li.recommended { background-color:#FFEFD3 !important;}
+.entrylist-item {
+	display: block;
+	border: none;
+}
 
-/*復活*/
-ul.entry-list-xl ul.entry-data { display: block !important; }
+.entrylist-item > li {
+	max-width: 100%;
+	border-right: none;
+	padding: 0 5px;
+}
 
-/*ボックスボーダー*/
-.box1_2,
-.box3_2,
-.box1_1 { width: 100% !important; border: 1px solid #CCC !important; border-radius: 4px !important; }
+.entrylist-contents-title a {
+	text-indent: -9999999px;
+	line-height: 0;
+	font-size: 16px;
+	color: #105bbb;
+}
 
-/*背景画像ボーダー消す*/
-div.box-wrap.box2.mix,
-ul.entry-vertical-4,
-ul.entry-vertical-3,
-div.box1_1 li.more-entry { background-image: none !important; }
+.entrylist-contents-title {
+	padding: 5px 5px 0;
+	min-height: inherit;
+	margin: 0 0 0px 0;
+	border-top: none;
+}
 
-/*ヘッダentry,bookmark数*/
-div#branding div#total { width: 50% !important; text-align: right !important; }
+.entrylist-contents-title a::after {
+	content: attr(title);
+	display: block;
+	text-indent: 0px;
+	line-height: 1.2;
+	margin-left: 121px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-right: 144px;
+}
 
-/*あとで読むアイコン*/
-.entry-unit .readlater-button{position:absolute!important; left:-0.5em!important; top:1em!important;}
+.entrylist-contents-body {
+	display: none;
+}
 
-/*カテゴリータイトル*/
-.box1_1 h2,
-.box3_1 h2,
-.box3_2 h2,
-.section-title,
-#appendix h3.unit-title{ margin: 0!important; padding: 5px 0 5px 5px!important; display: block!important; border-radius: 3px 3px 0 0 !important; line-height: 1 !important; background: url(/images/entry_title_bg.gif) top right #2c6ebd !important; }
-.bnews h2 a,
-#appendix h3.unit-title a,
-.box1_1 h2 a,
-.media-page h2,
-.entry h2{ color: #fff !important;}
+.entrylist-contents {
+	border: none;
+}
 
-/*おすすめサブカテゴリー*/
-#pickup,.additional-unit{ display: none !important;}
+.entrylist-contents-users a {
+	padding: 0 15px;
+	height: auto;
+	display: inline-block;
+}
 
-/*新着ブックマーク*/
-#appendix{ width: auto !important;}
-#appendix div.box-wrap {margin-bottom:30px !important;}
+.entrylist-contents-users span {
+	color: inherit;
+	font-size: inherit;
+}
 
-/*カテゴリ別ホッテントリ*/
-.box3_1 { width: 100% !important; margin: 0px !important; }
-.entry-vertical-3,
-.entry-list-m,
-.entry-horizontal-s{ border: 1px solid #CCC !important; border-radius: 0 0 4px 4px !important; border-top: none !important; background-color: white !important; padding: 0 0 !important; }
-.box3_1 h2 { margin: 15px 0 0 0 !important; }
-.box-wrap.box3.mix { margin-top: 0 !important; }
-li.entry-list { min-height: 1em !important; position: relative !important; border-bottom: 1px solid #ccc !important; }
-li.entry-list:last-child { border-bottom: none !important; }
-.entry-list .entry-contents h3,
-.entrylist-unit h3 { float: none !important; font-size: 116% !important; }
-.entry-list .entry-contents,
-.tag-recommend-entrylist-unit { border-top: none !important; }
-.tag-recommend-entrylist-unit .readlater-button{ position:absolute !important; left:5px !important; top:10px !important;}
+.entrylist-contents-users {
+	font-size: 12px;
+	display: inline-block;
+	top: 5px;
+}
 
-/*エントリーリスト*/
-ul.entry-data,
-ul.entry-data li { margin: 0 0 0 0 !important; }
-ul.entry-data li.date { line-height: 1.5 !important;}
-.entry-contents h3,
-.entrylist-unit h3 { margin: 0 !important; clear: none !important; line-height: 1 !important; font-size: 116% !important;min-height:1em !important;}
-.entry-vertical-3 { border: none !important; background: none !important; }
-li.entry-unit { width: 100% !important; border-bottom: 1px solid #ccc !important; overflow: hidden !important; position: relative !important; }
-li.entry-unit:last-child { border-bottom: none !important; }
-li.entry-unit ul.users { border-bottom: none !important; }
-ul.entry-list-xl,
-ul.entry-list-l,
-li.entry-unit { margin: 0 !important; }
-li.entry-unit,
-li.entry-list { clear: both !important; padding: 0 !important; min-height: 1em!important;border-bottom: 1px solid #ccc !important;}
-ul.entry-list-xl { border-bottom: 1px solid #ccc !important; }
-.shim-elem-for-height{height:1em!important;}
-ul.entry-horizontal-l {min-height: 1em !important; padding:0!important;}
-li.description{min-height: 1em !important; width:auto !important;}
-body.category-social li.entry-unit ul.entry-data li.date, body.category-economics li.entry-unit ul.entry-data li.date, body.category-life li.entry-unit ul.entry-data li.date, body.category-knowledge li.entry-unit ul.entry-data li.date, body.category-it li.entry-unit ul.entry-data li.date, body.category-entertainment li.entry-unit ul.entry-data li.date, body.category-game li.entry-unit ul.entry-data li.date, body.category-fun li.entry-unit ul.entry-data li.date{margin:0 !important;}
+.entrylist-contents-main {
+	padding: 0 0 0;
+	background: #fff;
+	border-bottom: 1px solid #d6d6d6;
+}
 
-ul.entry-meta { padding: 0 !important; border: none !important; }
-.box-wrap li.domain { margin: 0px 0px 3px 0 !important; position: absolute !important; right: 5px !important; top: 3px !important; width:auto !important;}
-.entrylist-unit li.domain{ position:inherit !important;}
-.box-wrap li.tag { display:block !important; position: absolute !important; margin: 0 !important; right: 5px !important; top: 1.5em !important; color: #666 !important; font-size: 77% !important; width:auto !important;}
-.box-wrap li.tag:before { content: 'タグ：'; }
-.box-wrap li.tag a, ul.entry-meta li.tag a:hover { background: none !important; color: green !important; margin: 0 0 0 5px !important; padding: 0 !important; float: none !important; font-size: 100% !important; }
-.box-wrap li.tag a:before,
-.box-wrap li.tag a:after { border: none !important; content: '' !important; }
-.box-wrap .tag a span { width:auto!important; overflow:inherit!important; text-overflow:inherit!important;}
+.entrylist-contents-domain {
+	font-size: 12px;
+	padding: 0px 0px 0;
+	display: inline;
+}
 
-/*技術ブログ*/
-.tag-recommend-entrylist-unit .blog-register {float:inherit!important; margin: 1em!important;}
-.tag-recommend-entrylist-unit li.entrylist-unit:first-child {padding: 5px 16px 5px 24px!important;}
+.entrylist-contents-meta {
+	padding: 0 5px 5px;
+	border-bottom: none;
+	display: inline;
+}
 
-a.video span.play { display: none !important; }
+.entrylist-contents-meta li {
+	display: inline-block;
+}
 
-/*特集*/
-div.issue-unit div.entry-contents{border-top: none !important;background-color: #f5f5f5 !important; width: 100% !important; padding: 5px !important;}
-.issue-unit .entry-contents h3 {display:inline !important; margin-left:5px !important;}
-.issue-unit .entry-data {display:inline !important;}
-.issue-unit .entry-data .description{display:none !important;}
-.issue-unit .issue-entrylist,
-.issue-unit .issue-entrylist:hover{background-color: #fff !important; cursor: default !important;}
-.issue-entrylist li a {text-overflow: inherit !important; max-width: inherit !important; overflow: inherit !important;color: #0056BD !important; font-weight: bold !important;}
-.entry-unit:last-child {border-bottom: 1px solid #ECECEC !important;}
+.entrylist-contents-domain img {
+	position: absolute;
+	left: 113px;
+	top: 5px;
+}
 
-/*pr*/
-ul.entry-data li.pr { font-size: 93% !important; line-height: 1 !important; }
-/*ad*/
-.ad-unit div,
-.ad-unit iframe,
-.ad-banner{width:auto !important;height:auto !important;}
+.entrylist-contents-domain a span {
+	display: inline;
+	position: absolute;
+	right: 30px;
+	top: 5px;
+	color: #666;
+}
 
-/*カテゴリー・日付*/
-ul.entry-data { padding: 4px 0 0 0 !important; min-height:1em !important; }
-li.category { display: block !important; line-height: 1 !important;}
-li.category a{margin-right: 5px !important; color: #FFFFFF !important;padding: 1px 7px !important; display: block !important; font-weight: normal !important; font-size:93% !important;}
+.entrylist-contents-tags {
+	padding: 0;
+	margin-top: -15px;
+	justify-content: flex-end;
+}
 
-/*レイアウト*/
-.box-wrap{width:100% !important;}
-.entry-contents { float: left !important; width: 80% !important; margin: 0 !important; padding: 5px 0 !important; border-bottom: none !important; min-height:0 !important; }
+.entrylist-contents-tags li {
+	line-height: 1;
+	padding: 0;
+	margin: 0;
+}
 
-/*xxx user*/
-ul.users { border: none !important; font-weight: bold !important; height: auto !important; float: left !important; font-size: 100% !important; margin: 8px 0.5% !important;padding: 0 !important; border-bottom: none !important; width: 10% !important; text-align: center !important;}
-ul.users li { font-weight: bold !important;}
-ul.users li a { padding: 0 !important; font-weight: bold !important; color: #FF0707 !important; background-color: #FFCBCB; border-bottom: 1px solid #FF0707; }
-ul.users span { font-size: 100% !important; font-weight: bold !important; letter-spacing: 0px !important; margin-right: 0px !important; display:inline !important; }
-ul.entry-horizontal-l ul.users li a{ padding: 0 !important;}
+.entrylist-contents-tags:before {
+	content: 'タグ：';
+	font-size: 13px;
+	line-height: 1;
+	display: inline-block;
+}
 
-/*ranking*/
-.ranking .users-small{margin:auto !important;}
+.entrylist-contents-tags a {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1;
+	padding: 0 3px;
+	margin: 0px 0px 0px 0px;
+	color: #04715b;
+	background-color: transparent;
+	text-decoration: none;
+	position: relative;
+	border-radius: 0 2px 2px 0;
+}
 
-/*もっと読む*/
-li.more-entry { margin: 0 5px 0 5px !important; overflow: hidden !important; }
-li.more-entry a {float: none !important; color: #383838 !important; padding: 10px 0 10px 0 !important; line-height: 1 !important; margin: 5px 0 5px 0px !important; }
+.entrylist-contents-tags a:before,
+.entrylist-contents-tags a:after {
+	display: none;
+}
 
-/*コメント数ランキング*/
-.ranking-comment .users-small{ margin:0 !important;}
-.ranking-comment-entries{ display:none !important;}
-.ranking-comment .users li {width: 100% !important;	white-space: nowrap !important;	overflow: hidden !important;}
+.entrylist-header-main .entrylist-image-entry .entrylist-contents-title {
+	padding-right: 0;
+}
 
-/*-----------------------------------------
-Section 1-2
-url-prefix("http://b.hatena.ne.jp/entry/")
--------------------------------------------*/
-
-.page-entry .entry-contents{ width:100% !important;float: none !important; display:block !important; padding-top:0 !important ;border: 1px solid #ccc !important ;border-radius: 4px !important;}
-.page-entry .entry-main{border-right:none !important; padding:0 0 !important;}
-.page-entry .entry-wrapper{ background-color:#fff !important; }
-.page-entry .entry-bookmark{ border:none !important; margin-bottom:15px;}
-.page-entry .entry-aside{ padding:0 !important;}
-.page-entry .entry-comment-contents {border-bottom: 1px solid #ccc !important; padding: 5px 36px 5px 52px !important;}
-.page-entry .entry-comment-contents:nth-child(odd){ background-color:#f7f7f7 !important;}
-.page-entry .entry-info-title a{ color:#0056bd;}
-.page-entry .entry-info-title a:hover{ text-decoration: underline;}
-.page-entry .entry-info-users a{font-weight: bold !important;padding:2px; color: #FF0707 !important; background-color: #FFCBCB !important; border-bottom: 1px solid #FF0707 !important;}
-.page-entry .entry-main a:hover { text-decoration: none !important;}
-.page-entry .entry-info { padding: 15px !important;}
-.page-entry .entry-info-title,.page-entry .entry-info-meta{ margin-bottom:.2em !important;}
-.page-entry .entry-myBookmark{ margin: 0 15px !important;}
-.page-entry .entry-comment-tab{border-bottom: 3px solid #008fde !important;}
-.page-entry .entry-comment-tab li { background-color: #bbb !important; color: #fff !important; font-weight: normal !important; border-bottom:none !important; margin-bottom:0 !important;}
-.page-entry .entry-comment-tab li.is-active { border-bottom:none !important; background-color: #008fde !important; color: #fff !important;}
-.page-entry .entry-comment-meta{ line-height:1 !important;}
-.page-entry .entry-comment-tags li a{ color:#256e15 !important;}
-/*ぱんくず*/
-.page-entry .breadcrumb-wrapper{ background-color: #F0F0F0 !important; padding:5px 0 !important;}
-.page-entry .breadcrumb-share{-ms-flex-preferred-size: calc(100%/8) !important; flex-basis: calc(100%/8) !important;}
-
-/*マイページ*/
-#hatena-bookmark-user-page,
-#hatena-bookmark-user-page .wrapper-container-inner{background-color:#fff !important;}
-#hatena-bookmark-user-page .entry-summary{line-height:1.5 !important;}
-/*設定ページ*/
-#hatena-bookmark-config-global{background-color:#fff !important;}
-/*ヘルプページなど*/
-#sidebar{width:100%!important;margin-left: 0!important;}
+.readlater-button {
+	width: 23px;
+	height: 18px;
+	background-position: left top;
+}

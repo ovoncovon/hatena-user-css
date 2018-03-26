@@ -22,13 +22,19 @@ body {
 }
 
 .entrylist-header-main {
-	border-right: none;
 	max-width: 100%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	border-radius: 4px 4px 0 0;
 }
 
 .entrylist-item {
 	display: block;
-	border: none;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-top: none;
+	border-bottom: none;
 }
 
 .entrylist-item > li {
@@ -69,6 +75,20 @@ body {
 
 .entrylist-contents {
 	border: none;
+}
+
+.entrylist-readmore {
+	margin-top: 1px;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+.entrylist-readmore a {
+	color: #333;
+	background: #e6e6e6;
+	font-weight: bold;
 }
 
 .entrylist-contents-users a {
@@ -169,6 +189,94 @@ body {
 	width: 23px;
 	height: 18px;
 	background-position: left top;
+}
+
+.entrylist-unit > h2,
+.entrylist-issue-unit-hatena-news > h2 {
+	background-color: #1255b7;
+	line-height: 1;
+	border-radius: 4px 4px 0 0;
+	margin: 0;
+}
+
+.entrylist-unit > h2 a,
+.entrylist-issue-unit-hatena-news > h2 a,
+.entrylist-issue-unit-hatena-news h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-hatena-news h2 .entrylist-title, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-title {
+	display: block;
+	padding: 10px 10px;
+	border-radius: 4px 4px 0 0;
+	color: #fff;
+}
+
+.entrylist-issue-unitTitle, .entrylist-title {
+	font-size: 13px;
+	padding: 0 10px;
+	line-height: 1;
+	margin: 0;
+	color: #fff;
+	background-color: #1255b7;
+}
+
+.entrylist-issue-unit-hatena-news h2, .entrylist-issue-unit-weekly-hatena-blog h2 {
+	background-position: 10px 10px;
+	padding-left: 28px;
+}
+
+/*家電会議*/
+.entrylist-kadenkaigi, .entrylist-unit {
+	background-color: #fff;
+}
+
+.entrylist-kadenkaigi-title {
+	background-color: #000;
+	padding: 0;
+	margin: 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.entrylist-kadenkaigi-title a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+	display: block;
+}
+
+.entrylist-issue-items {
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	display: block;
+}
+
+.entrylist-issue-items > li {
+	max-width: inherit;
+	box-sizing: border-box;
+	border-right: none;
+	padding: 0 5px;
+}
+
+.entrylist-kadenkaigi .entrylist-issue-contents {
+	border: none;
+	display: flex;
+}
+
+.entrylist-kadenkaigi-product {
+	white-space: inherit;
+	width: 100px;
+}
+
+.entrylist-issue-thumb {
+	padding: 10px 10px 0;
+}
+
+.entrylist-issue-thumb span {
+	width: 90px;
+	height: 90px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.entrylist-contents-list .entrylist-contents-list-title {
+	max-width: 630px;
 }
 
 /*エントリーページ*/

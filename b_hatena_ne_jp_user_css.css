@@ -1,34 +1,35 @@
 body {
 	background-color: #f0f0f0;
 }
-
 .branding {
 	background-color: #fff;
 }
-
 .navi-body {
 	display: table;
-	width: 960px;
+	width: auto;
+	min-width: 960px;
 }
-
 .navi-body li {
 	display: table-cell;
 }
-
-.entrylist-header,
-.entrylist-item {
+.navi-wrapper.is-fixed .navi-body, .navi-wrapper.is-scrolled .navi-body {
+	width: auto;
+	min-width: 960px;
+}
+.navi-layout {
+	margin: 5px 22px 0 30px;
+}
+.entrylist-header, .entrylist-item {
 	display: block;
 	border: none;
 }
-
-.entrylist-header-main {
+.entrylist-header-main, .entrylist-3column-inner {
 	max-width: 100%;
 	background-color: #fff;
 	border: 1px solid #ccc;
 	border-bottom: none;
 	border-radius: 4px 4px 0 0;
 }
-
 .entrylist-item {
 	display: block;
 	border: 1px solid #ccc;
@@ -36,27 +37,23 @@ body {
 	border-top: none;
 	border-bottom: none;
 }
-
 .entrylist-item > li {
 	max-width: 100%;
 	border-right: none;
 	padding: 0 5px;
 }
-
 .entrylist-contents-title a {
 	text-indent: -9999999px;
 	line-height: 0;
 	font-size: 16px;
 	color: #105bbb;
 }
-
 .entrylist-contents-title {
 	padding: 5px 5px 0;
 	min-height: inherit;
-	margin: 0 0 0px 0;
+	margin: 0 0 0 0;
 	border-top: none;
 }
-
 .entrylist-contents-title a::after {
 	content: attr(title);
 	display: block;
@@ -68,15 +65,12 @@ body {
 	text-overflow: ellipsis;
 	margin-right: 144px;
 }
-
 .entrylist-contents-body {
 	display: none;
 }
-
 .entrylist-contents {
 	border: none;
 }
-
 .entrylist-readmore {
 	margin-top: 1px;
 	padding: 5px;
@@ -84,63 +78,59 @@ body {
 	border: 1px solid #ccc;
 	border-top: none;
 }
-
 .entrylist-readmore a {
 	color: #333;
 	background: #e6e6e6;
 	font-weight: bold;
 }
-
 .entrylist-contents-users {
-	width: 105px;
 	margin-left: 10px;
-}
-
-.entrylist-contents-users a {
-	padding: 0 0;
-	height: auto;
+	font-size: 12px;
 	display: inline-block;
+	top: 5px;
+	width:90px;
+	text-align:center;
+	border-bottom:1px solid #ff191d;
 }
-
+.entrylist-contents-users a {
+	height: auto;
+	color:#ff191d !important;
+	font-weight:bold;
+	display:block;
+	padding:1px 5px;
+	background-color:#ffcbcc;
+}
 .entrylist-contents-users span {
 	color: inherit;
 	font-size: inherit;
 }
-
-.entrylist-contents-users {
-	font-size: 12px;
-	display: inline-block;
-	top: 5px;
+.entrylist-contents-category {
+	width:90px;
+	text-align:center;
 }
-
 .entrylist-contents-main {
 	padding: 0 0 0;
 	background: #fff;
 	border-bottom: 1px solid #d6d6d6;
 }
-
 .entrylist-contents-domain {
 	font-size: 12px;
-	padding: 0px 0px 0;
+	padding: 0 0 0;
 	display: inline;
 }
-
 .entrylist-contents-meta {
 	padding: 0 5px 5px;
 	border-bottom: none;
 	display: inline;
 }
-
 .entrylist-contents-meta li {
 	display: inline-block;
 }
-
 .entrylist-contents-domain img {
 	position: absolute;
 	left: 113px;
 	top: 5px;
 }
-
 .entrylist-contents-domain a span {
 	display: inline;
 	position: absolute;
@@ -148,26 +138,22 @@ body {
 	top: 5px;
 	color: #666;
 }
-
 .entrylist-contents-tags {
 	padding: 0;
-	margin-top: -15px;
-	justify-content: flex-end;
+	margin-top: -20px;
+	margin-left: 216px;
 }
-
 .entrylist-contents-tags li {
 	line-height: 1;
 	padding: 0;
 	margin: 0;
 }
-
 .entrylist-contents-tags:before {
-	content: 'タグ：';
+	content:'タグ：';
 	font-size: 13px;
 	line-height: 1;
 	display: inline-block;
 }
-
 .entrylist-contents-tags a {
 	display: inline-block;
 	font-size: 13px;
@@ -180,39 +166,33 @@ body {
 	position: relative;
 	border-radius: 0 2px 2px 0;
 }
-
-.entrylist-contents-tags a:before,
-.entrylist-contents-tags a:after {
+.entrylist-contents-tags a:before, .entrylist-contents-tags a:after {
 	display: none;
 }
-
 .entrylist-header-main .entrylist-image-entry .entrylist-contents-title {
 	padding-right: 0;
 }
-
 .readlater-button {
 	width: 23px;
 	height: 18px;
 	background-position: left top;
 }
-
-.entrylist-unit > h2,
-.entrylist-issue-unit-hatena-news > h2 {
+.entrylist-unit > h2, .entrylist-issue-unit-hatena-news > h2 {
 	background-color: #1255b7;
 	line-height: 1;
 	border-radius: 4px 4px 0 0;
 	margin: 0;
 }
-
-.entrylist-unit > h2 a,
-.entrylist-issue-unit-hatena-news > h2 a,
-.entrylist-issue-unit-hatena-news h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-hatena-news h2 .entrylist-title, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-title {
+.entrylist-unit > h2 a, .entrylist-issue-unit-hatena-news > h2 a, .entrylist-issue-unit-hatena-news h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-hatena-news h2 .entrylist-title, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-title, .entrylist-3column-inner > h2 a {
 	display: block;
 	padding: 10px 10px;
 	border-radius: 4px 4px 0 0;
 	color: #fff;
 }
-
+.entrylist-issue-items {
+	border: 1px solid #ccc;
+	border-radius:0 0 4px 4px;
+}
 .entrylist-issue-unitTitle, .entrylist-title {
 	font-size: 13px;
 	padding: 0 10px;
@@ -221,99 +201,127 @@ body {
 	color: #fff;
 	background-color: #1255b7;
 }
-
-.entrylist-issue-unit-hatena-news h2, .entrylist-issue-unit-weekly-hatena-blog h2 {
-	background-position: 10px 10px;
-	padding-left: 28px;
+.entrylist-issue-unitTitle {
+	padding: 10px 10px;
+	border-radius: 4px 4px 0 0;
+	color: #fff;
+	display:block;
 }
-
-/*家電会議*/
-.entrylist-kadenkaigi, .entrylist-unit {
+/*3column*/
+.entrylist-3column {
+	display:block;
+}
+.entrylist-3column-inner {
+	max-width: inherit;
+	margin-bottom:30px;
+	border-bottom:1px solid #ccc;
+	border-radius: 0px 0px 4px 4px;
+}
+.entrylist-3column-items {
+	background-color: #fff;
+	border:none;
+}
+.entrylist-3column-readmore {
+	margin-top: 0px;
+	border-left: none;
+	padding: 5px;
+}
+.entrylist-3column-title {
+	font-size: 16px;
+	line-height: inherit;
+	min-height: inherit;
+	padding: 5px 5px 0px;
+}
+/*家電会議 issue*/
+.entrylist-kadenkaigi, .entrylist-unit, .entrylist-issue-items {
 	background-color: #fff;
 }
-
 .entrylist-kadenkaigi-title {
 	background-color: #000;
 	padding: 0;
 	margin: 0;
 	border-radius: 4px 4px 0 0;
 }
-
 .entrylist-kadenkaigi-title a {
 	text-decoration: none;
 	color: #fff;
 	padding: 10px 10px;
 	display: block;
 }
-
 .entrylist-kadenkaigi-maker {
 	white-space: inherit;
 }
-
 .entrylist-issue-items {
 	border-right: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	display: block;
 }
-
 .entrylist-issue-items > li {
 	max-width: inherit;
 	box-sizing: border-box;
 	border-right: none;
 	padding: 0 5px;
 }
-
 .entrylist-kadenkaigi .entrylist-issue-contents {
 	border: none;
 	display: flex;
 }
-
 .entrylist-kadenkaigi-product {
 	white-space: inherit;
 	width: 100px;
 }
-
 .entrylist-issue-thumb {
 	padding: 10px 10px 0;
 }
-
 .entrylist-issue-thumb span {
 	width: 90px;
 	height: 90px;
 	border-radius: 4px;
 	border: 1px solid #ccc;
 }
-
 .entrylist-contents-list .entrylist-contents-list-title {
-	max-width: 630px;
+	width: 680px;
 }
-
+.entrylist-issue-unit-hatena-news h2, .entrylist-issue-unit-weekly-hatena-blog h2 {
+	background-position: 10px 10px;
+	padding-left: 28px;
+}
+.entrylist-issue-contents {
+	display:flex;
+}
+.entrylist-contents-category {
+	display:none;
+}
+.entrylist-issue-title {
+	font-size: 13px;
+	padding: 5px;
+	flex-basis:200px;
+}
+/*人気エントリーもどうぞ*/
+.entrylist-recommend {
+	display:none;
+}
 /*エントリーページ*/
 .entry-contents {
 	display: block;
 	background-color: #fff;
 }
-
 .entry-main {
 	border: 1px solid #ccc;
 	padding: 0 0px 0 0;
 }
-
 .entry-bookmark {
 	border: none;
 	margin: 0 0 10px 0;
 }
-
 .entry-relationContents-list {
 	margin: 0 0 0px 0;
 }
-
 .entry-aside {
 	padding: 10px 10px;
 	border: 1px solid #ccc;
 	border-top: none;
 }
-
 .entry-bookmarkUsers {
 	margin: 0 0 0px;
 }

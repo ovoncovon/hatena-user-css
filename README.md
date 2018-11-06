@@ -19,19 +19,15 @@ https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css
 
 ブラウザ拡張
 --------
-### Google Chrome Stylish
+### Stylus
 
-https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe  
+https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne  
 
-* 設定→機能拡張→Stylishのオプションを開く  
+* 設定→機能拡張→Stylusのオプションを開く  
 * 新しいスタイルの作成→b_hatena_ne_jp_user_css.cssをコピー＆ペースト→適用先を  
 「次で始まるURL」→http://b.hatena.ne.jp/  
 
-### Mozila Firefox Stylish
+### Stylus
 
-https://addons.mozilla.org/ja/firefox/addon/stylish/  
+https://addons.mozilla.org/ja/firefox/addon/styl-us/  
 * 「ツール」→「アドオン」→「新しいスタイル」をクリック、適当な名前をつけてb_hatena_ne_jp_user_css_ffx.cssの内容をコピー＆ペーストして保存する  
-
-Opera Browser
---------
-* Google Chromeと同じくstylishを使う。

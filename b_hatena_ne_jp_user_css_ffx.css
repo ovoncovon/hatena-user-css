@@ -1,329 +1,433 @@
 @-moz-document url-prefix("http://b.hatena.ne.jp") {
 	body {
-			background-color: #f0f0f0;
+		background-color: #f0f0f0;
 	}
+
 	.branding {
-			background-color: #fff;
+		background-color: #fff;
 	}
+
 	.navi-body {
-			display: table;
-			width: auto;
-			min-width: 960px;
+		display: table;
+		width: auto;
+		min-width: 960px;
 	}
+
 	.navi-body li {
-			display: table-cell;
+		display: table-cell;
 	}
+
 	.navi-wrapper.is-fixed .navi-body, .navi-wrapper.is-scrolled .navi-body {
-			width: auto;
-			min-width: 960px;
+		width: auto;
+		min-width: 960px;
 	}
+
 	.navi-layout {
-			margin: 5px 22px 0 30px;
+		margin: 5px 22px 0 30px;
 	}
+
 	.entrylist-header, .entrylist-item {
-			display: block;
-			border: none;
+		display: block;
+		border: none;
 	}
+
 	.entrylist-header-main, .entrylist-3column-inner {
-			max-width: 100%;
-			background-color: #fff;
-			border: 1px solid #ccc;
-			border-bottom: none;
-			border-radius: 4px 4px 0 0;
+		max-width: 100%;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-bottom: none;
+		border-radius: 4px 4px 0 0;
 	}
+
 	.entrylist-item {
-			display: block;
-			border: 1px solid #ccc;
-			background-color: #fff;
-			border-top: none;
-			border-bottom: none;
+		display: block;
+		border: 1px solid #ccc;
+		background-color: #fff;
+		border-top: none;
+		border-bottom: none;
 	}
+
 	.entrylist-item > li {
-			max-width: 100%;
-			border-right: none;
-			padding: 0 5px;
+		max-width: 100%;
+		border-right: none;
+		padding: 0 5px;
 	}
+
 	.entrylist-contents-title a {
-			text-indent: -9999999px;
-			line-height: 0;
-			font-size: 16px;
-			color: #105bbb;
+		text-indent: -9999999px;
+		line-height: 0;
+		font-size: 100%;
+		color: #105bbb;
+		margin: 0 auto auto 13.2%;
 	}
+
+	.entrylist-contents-title a:focus {
+		outline: none;
+	}
+
 	.entrylist-contents-title {
-			padding: 5px 5px 0;
-			min-height: inherit;
-			margin: 0 0 0 0;
-			border-top: none;
+		padding: 5px 5px 0;
+		min-height: inherit;
+		margin: 0 0 0 0;
+		border-top: none;
 	}
+
 	.entrylist-contents-title a::after {
-			content: attr(title);
-			display: block;
-			text-indent: 0px;
-			line-height: 1.2;
-			margin-left: 121px;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			margin-right: 144px;
+		content: attr(title);
+		display: block;
+		text-indent: 0px;
+		line-height: 1.2;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin-right: 17%;
 	}
+
 	.entrylist-contents-body {
-			display: none;
+		display: none;
 	}
+
 	.entrylist-contents {
-			border: none;
+		border: none;
 	}
+
 	.entrylist-readmore {
-			margin-top: 1px;
-			padding: 5px;
-			background-color: #fff;
-			border: 1px solid #ccc;
-			border-top: none;
+		margin-top: 1px;
+		padding: 5px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-top: none;
 	}
+
 	.entrylist-readmore a {
-			color: #333;
-			background: #e6e6e6;
-			font-weight: bold;
+		color: #333;
+		background: #e6e6e6;
+		font-weight: bold;
 	}
+
 	.entrylist-contents-users {
-			margin-left: 10px;
-			font-size: 12px;
-			display: inline-block;
-			top: 5px;
-			width:90px;
-			text-align:center;
-			border-bottom:1px solid #ff191d;
+		margin-left: 10px;
+		font-size: 75%;
+		display: inline-block;
+		top: 5px;
+		width: 10%;
+		text-align: center;
+		border-bottom: 1px solid #ff191d;
 	}
+
 	.entrylist-contents-users a {
-			height: auto;
-			color:#ff191d !important;
-			font-weight:bold;
-			display:block;
-			padding:1px 5px;
-			background-color:#ffcbcc;
+		height: auto;
+		color: #ff191d !important;
+		font-weight: bold;
+		display: block;
+		padding: 3px 0;
+		line-height: 1;
+		background-color: #ffcbcc;
 	}
+
 	.entrylist-contents-users span {
-			color: inherit;
-			font-size: inherit;
+		color: inherit;
+		font-size: inherit;
 	}
+
 	.entrylist-contents-category {
-			width:90px;
-			text-align:center;
+		width: 10%;
+		font-size: 75%;
+		text-align: center;
+		margin: 0;
+		overflow: hidden;
+		height: auto;
 	}
+
+	.entrylist-contents-category a {
+		display: block;
+		width: auto;
+		line-height: 1;
+		height: auto;
+		font-size: 100%;
+		padding: 3px 0;
+		overflow: hidden;
+	}
+
+	.entrylist-contents-detail {
+		padding: 3px 0 12px 0;
+	}
+
 	.entrylist-contents-main {
-			padding: 0 0 0;
-			background: #fff;
-			border-bottom: 1px solid #d6d6d6;
+		padding: 0 0 0;
+		background: #fff;
+		border-bottom: 1px solid #d6d6d6;
 	}
+
 	.entrylist-contents-domain {
-			font-size: 12px;
-			padding: 0 0 0;
-			display: inline;
+		font-size: 12px;
+		padding: 0 0 0;
+		display: inline;
 	}
+
+	.entrylist-header-main .entrylist-contents-meta {
+		margin: 0.08em 5px 0 5px;
+	}
+
 	.entrylist-contents-meta {
-			padding: 0 5px 5px;
-			border-bottom: none;
-			display: inline;
+		margin: 0.08em 5px 0 5px;
+		padding: 0;
+		border-bottom: none;
+		align-items: center;
 	}
+
 	.entrylist-contents-meta li {
-			display: inline-block;
+		display: inline-block;
+		line-height: 1;
 	}
+
+	.entrylist-contents-date {
+		padding: 0 0 0 1.3%;
+		font-size: 81%;
+	}
+
 	.entrylist-contents-domain img {
-			position: absolute;
-			left: 113px;
-			top: 5px;
+		position: absolute;
+		left: 12%;
+		top: 0.55em;
 	}
+
 	.entrylist-contents-domain a span {
-			display: inline;
-			position: absolute;
-			right: 30px;
-			top: 5px;
-			color: #666;
+		display: block;
+		position: absolute;
+		right: 30px;
+		top: 5px;
+		color: #666;
+		width: 12%;
+		overflow: hidden;
+		text-align: right;
 	}
+
 	.entrylist-contents-tags {
-			padding: 0;
-			margin-top: -20px;
-			margin-left: 216px;
+		padding: 0;
+		margin-top: -1em;
+		margin-left: 23%;
+		align-items: center;
 	}
+
 	.entrylist-contents-tags li {
-			line-height: 1;
-			padding: 0;
-			margin: 0;
+		line-height: 1;
+		padding: 0;
+		margin: 0;
 	}
+
 	.entrylist-contents-tags:before {
-			content:'タグ：';
-			font-size: 13px;
-			line-height: 1;
-			display: inline-block;
+		content: 'タグ：';
+		font-size: 13px;
+		line-height: 1;
+		display: inline-block;
 	}
+
 	.entrylist-contents-tags a {
-			display: inline-block;
-			font-size: 13px;
-			line-height: 1;
-			padding: 0 3px;
-			margin: 0px 0px 0px 0px;
-			color: #04715b;
-			background-color: transparent;
-			text-decoration: none;
-			position: relative;
-			border-radius: 0 2px 2px 0;
+		display: inline-block;
+		font-size: 13px;
+		line-height: 1;
+		padding: 0 3px;
+		margin: 0px 0px 0px 0px;
+		color: #04715b;
+		background-color: transparent;
+		text-decoration: none;
+		position: relative;
+		border-radius: 0 2px 2px 0;
 	}
+
 	.entrylist-contents-tags a:before, .entrylist-contents-tags a:after {
-			display: none;
+		display: none;
 	}
+
 	.entrylist-header-main .entrylist-image-entry .entrylist-contents-title {
-			padding-right: 0;
+		padding-right: 0;
+		font-size: 100%;
 	}
+
 	.readlater-button {
-			width: 23px;
-			height: 18px;
-			background-position: left top;
+		width: 23px;
+		height: 18px;
+		background-position: left top;
 	}
+
 	.entrylist-unit > h2, .entrylist-issue-unit-hatena-news > h2 {
-			background-color: #1255b7;
-			line-height: 1;
-			border-radius: 4px 4px 0 0;
-			margin: 0;
+		background-color: #1255b7;
+		line-height: 1;
+		border-radius: 4px 4px 0 0;
+		margin: 0;
 	}
+
 	.entrylist-unit > h2 a, .entrylist-issue-unit-hatena-news > h2 a, .entrylist-issue-unit-hatena-news h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-hatena-news h2 .entrylist-title, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-issue-unitTitle, .entrylist-issue-unit-weekly-hatena-blog h2 .entrylist-title, .entrylist-3column-inner > h2 a {
-			display: block;
-			padding: 10px 10px;
-			border-radius: 4px 4px 0 0;
-			color: #fff;
+		display: block;
+		padding: 10px 10px;
+		border-radius: 4px 4px 0 0;
+		color: #fff;
 	}
+
 	.entrylist-issue-items {
-			border: 1px solid #ccc;
-			border-radius:0 0 4px 4px;
+		border: 1px solid #ccc;
+		border-radius: 0 0 4px 4px;
 	}
+
 	.entrylist-issue-unitTitle, .entrylist-title {
-			font-size: 13px;
-			padding: 0 10px;
-			line-height: 1;
-			margin: 0;
-			color: #fff;
-			background-color: #1255b7;
+		font-size: 13px;
+		padding: 0 10px;
+		line-height: 1;
+		margin: 0;
+		color: #fff;
+		background-color: #1255b7;
 	}
+
 	.entrylist-issue-unitTitle {
-			padding: 10px 10px;
-			border-radius: 4px 4px 0 0;
-			color: #fff;
-			display:block;
+		padding: 10px 10px;
+		border-radius: 4px 4px 0 0;
+		color: #fff;
+		display: block;
 	}
+
 	/*3column*/
-	 .entrylist-3column {
-			display:block;
+	.entrylist-3column {
+		display: block;
 	}
+
 	.entrylist-3column-inner {
-			max-width: inherit;
-			margin-bottom:30px;
-			border-bottom:1px solid #ccc;
-			border-radius: 0px 0px 4px 4px;
+		max-width: inherit;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #ccc;
+		border-radius: 0px 0px 4px 4px;
 	}
+
 	.entrylist-3column-items {
-			background-color: #fff;
-			border:none;
+		background-color: #fff;
+		border: none;
 	}
+
 	.entrylist-3column-readmore {
-			margin-top: 0px;
-			border-left: none;
-			padding: 5px;
+		margin-top: 0px;
+		border-left: none;
+		padding: 5px;
 	}
+
 	.entrylist-3column-title {
-			font-size: 16px;
-			line-height: inherit;
-			min-height: inherit;
-			padding: 5px 5px 0px;
+		font-size: 16px;
+		line-height: inherit;
+		min-height: inherit;
+		padding: 5px 5px 0px;
 	}
+
 	/*家電会議 issue*/
-	 .entrylist-kadenkaigi, .entrylist-unit, .entrylist-issue-items {
-			background-color: #fff;
+	.entrylist-kadenkaigi, .entrylist-unit, .entrylist-issue-items {
+		background-color: #fff;
 	}
+
 	.entrylist-kadenkaigi-title {
-			background-color: #000;
-			padding: 0;
-			margin: 0;
-			border-radius: 4px 4px 0 0;
+		background-color: #000;
+		padding: 0;
+		margin: 0;
+		border-radius: 4px 4px 0 0;
 	}
+
 	.entrylist-kadenkaigi-title a {
-			text-decoration: none;
-			color: #fff;
-			padding: 10px 10px;
-			display: block;
+		text-decoration: none;
+		color: #fff;
+		padding: 10px 10px;
+		display: block;
 	}
+
 	.entrylist-kadenkaigi-maker {
-			white-space: inherit;
+		white-space: inherit;
 	}
+
 	.entrylist-issue-items {
-			border-right: 1px solid #ccc;
-			border-left: 1px solid #ccc;
-			display: block;
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+		display: block;
 	}
+
 	.entrylist-issue-items > li {
-			max-width: inherit;
-			box-sizing: border-box;
-			border-right: none;
-			padding: 0 5px;
+		max-width: inherit;
+		box-sizing: border-box;
+		border-right: none;
+		padding: 0 5px;
 	}
+
 	.entrylist-kadenkaigi .entrylist-issue-contents {
-			border: none;
-			display: flex;
+		border: none;
+		display: flex;
 	}
+
 	.entrylist-kadenkaigi-product {
-			white-space: inherit;
-			width: 100px;
+		white-space: inherit;
+		width: 100px;
 	}
+
 	.entrylist-issue-thumb {
-			padding: 10px 10px 0;
+		padding: 10px 10px 0;
 	}
+
 	.entrylist-issue-thumb span {
-			width: 90px;
-			height: 90px;
-			border-radius: 4px;
-			border: 1px solid #ccc;
+		width: 90px;
+		height: 90px;
+		border-radius: 4px;
+		border: 1px solid #ccc;
 	}
+
 	.entrylist-contents-list .entrylist-contents-list-title {
-			width: 680px;
+		width: 680px;
 	}
+
 	.entrylist-issue-unit-hatena-news h2, .entrylist-issue-unit-weekly-hatena-blog h2 {
-			background-position: 10px 10px;
-			padding-left: 28px;
+		background-position: 10px 10px;
+		padding-left: 28px;
 	}
+
 	.entrylist-issue-contents {
-			display:flex;
+		display: flex;
 	}
+
 	.entrylist-contents-category {
-			display:none;
+		display: none;
 	}
+
 	.entrylist-issue-title {
-			font-size: 13px;
-			padding: 5px;
-			flex-basis:200px;
+		font-size: 13px;
+		padding: 5px;
+		flex-basis: 200px;
 	}
+
 	/*人気エントリーもどうぞ*/
-	 .entrylist-recommend {
-			display:none;
+	.entrylist-recommend {
+		display: none;
 	}
+
 	/*エントリーページ*/
-	 .entry-contents {
-			display: block;
-			background-color: #fff;
+	.entry-contents {
+		display: block;
+		background-color: #fff;
 	}
+
 	.entry-main {
-			border: 1px solid #ccc;
-			padding: 0 0px 0 0;
+		border: 1px solid #ccc;
+		padding: 0 0px 0 0;
 	}
+
 	.entry-bookmark {
-			border: none;
-			margin: 0 0 10px 0;
+		border: none;
+		margin: 0 0 10px 0;
 	}
+
 	.entry-relationContents-list {
-			margin: 0 0 0px 0;
+		margin: 0 0 0px 0;
 	}
+
 	.entry-aside {
-			padding: 10px 10px;
-			border: 1px solid #ccc;
-			border-top: none;
+		padding: 10px 10px;
+		border: 1px solid #ccc;
+		border-top: none;
 	}
+
 	.entry-bookmarkUsers {
-			margin: 0 0 0px;
+		margin: 0 0 0px;
 	}
-	}
+}

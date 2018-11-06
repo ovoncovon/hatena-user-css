@@ -1,11 +1,10 @@
 hatena-user-css
 ===============
-2013/01/08のリニューアルにより、はてブのトップページのデザインが見難くてたまらないので
-ユーザーCSSを作りました。  
+はてなブックマークを自分的に見やすくするユーザースタイルシートです。  
   
 * Source:https://github.com/ovoncovon/hatena-user-css/  
-* Homepage:http://tpex.hateblo.jp/entry/b-hatena-user-css  
-* Twitter:https://twitter.com/tpex_ovon  
+* 詳細はこちら:http://tpex.hateblo.jp/entry/b-hatena-user-css  
+* 不具合はこちら:https://twitter.com/tpex_ovon  
 
 ファイル説明
 --------
@@ -14,7 +13,9 @@ https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css
 
 * Firefox用 https://github.com/ovoncovon/hatena-user-css/blob/master/b_hatena_ne_jp_user_css_ffx.css  
 
-両ブラウザともadblockを適用した状態でスタイルを調整しています。  
+* adblockを適用した状態でスタイルを調整しています。  
+* Firefoxはテストをあまりしていません。
+
 
 ブラウザ拡張
 --------
